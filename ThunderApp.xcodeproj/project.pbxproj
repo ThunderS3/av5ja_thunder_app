@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		103C50272C0C70A5008085C8 /* Thunder in Frameworks */ = {isa = PBXBuildFile; productRef = 103C50262C0C70A5008085C8 /* Thunder */; };
 		103C502A2C0C70D3008085C8 /* PersistableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C50292C0C70D3008085C8 /* PersistableEnum.swift */; };
-		1070F5D42C0C62BF00654AAF /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 1070F5D32C0C62BF00654AAF /* Raccoon */; };
-		1070F5D72C0C634A00654AAF /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1070F5D62C0C634A00654AAF /* RealmSwift */; };
 		1070F5DA2C0C636E00654AAF /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5D92C0C636E00654AAF /* RealmMigration.swift */; };
-		1070F5E02C0C676F00654AAF /* LicenseList in Frameworks */ = {isa = PBXBuildFile; productRef = 1070F5DF2C0C676F00654AAF /* LicenseList */; };
-		1070F5E42C0C67A400654AAF /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 1070F5E32C0C67A400654AAF /* ZIPFoundation */; };
 		1070F5E62C0C67D400654AAF /* SplitNavigationViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */; };
 		1070F5EB2C0C67FB00654AAF /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5EA2C0C67FB00654AAF /* MyPageView.swift */; };
 		1070F5ED2C0C680500654AAF /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5EC2C0C680500654AAF /* ResultsView.swift */; };
@@ -25,6 +20,11 @@
 		1070F5FD2C0C6AFD00654AAF /* RealmCoopWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */; };
 		1070F5FE2C0C6AFD00654AAF /* RealmCoopPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5F82C0C6AFC00654AAF /* RealmCoopPlayer.swift */; };
 		1070F5FF2C0C6AFD00654AAF /* RealmCoopEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5F92C0C6AFD00654AAF /* RealmCoopEnemy.swift */; };
+		108819EC2C12C9F40064676C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 108819EB2C12C9F40064676C /* RealmSwift */; };
+		108819EF2C12CA000064676C /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 108819EE2C12CA000064676C /* ZIPFoundation */; };
+		108819F22C12CA0C0064676C /* LicenseList in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F12C12CA0C0064676C /* LicenseList */; };
+		108819F62C12CAED0064676C /* Firebolt in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F52C12CAED0064676C /* Firebolt */; };
+		108819F82C12CB1A0064676C /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F72C12CB1A0064676C /* Raccoon */; };
 		109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */; };
 		109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */; };
 		109F9AC22C0C5DCE00DD0281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109F9AC12C0C5DCE00DD0281 /* Assets.xcassets */; };
@@ -78,8 +78,7 @@
 		1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopWave.swift; sourceTree = "<group>"; };
 		1070F5F82C0C6AFC00654AAF /* RealmCoopPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopPlayer.swift; sourceTree = "<group>"; };
 		1070F5F92C0C6AFD00654AAF /* RealmCoopEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopEnemy.swift; sourceTree = "<group>"; };
-		1070F6022C0C6E5300654AAF /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
-		1070F6032C0C6F1C00654AAF /* Raccoon */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Raccoon; path = ../Raccoon; sourceTree = "<group>"; };
+		108819F32C12CA740064676C /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
 		109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThunderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainApp.swift; sourceTree = "<group>"; };
 		109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,11 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1070F5D72C0C634A00654AAF /* RealmSwift in Frameworks */,
-				1070F5D42C0C62BF00654AAF /* Raccoon in Frameworks */,
-				1070F5E02C0C676F00654AAF /* LicenseList in Frameworks */,
-				103C50272C0C70A5008085C8 /* Thunder in Frameworks */,
-				1070F5E42C0C67A400654AAF /* ZIPFoundation in Frameworks */,
+				108819EC2C12C9F40064676C /* RealmSwift in Frameworks */,
+				108819F82C12CB1A0064676C /* Raccoon in Frameworks */,
+				108819F22C12CA0C0064676C /* LicenseList in Frameworks */,
+				108819EF2C12CA000064676C /* ZIPFoundation in Frameworks */,
+				108819F62C12CAED0064676C /* Firebolt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1070F5DD2C0C65C800654AAF /* AppInfo.plist */,
-				1070F6022C0C6E5300654AAF /* ThunderSDK */,
-				1070F6032C0C6F1C00654AAF /* Raccoon */,
+				108819F32C12CA740064676C /* ThunderSDK */,
 				109F9ABC2C0C5DCD00DD0281 /* ThunderApp */,
 				109F9ACD2C0C5DCE00DD0281 /* ThunderAppTests */,
 				109F9AD72C0C5DCE00DD0281 /* ThunderAppUITests */,
@@ -275,11 +273,11 @@
 			);
 			name = ThunderApp;
 			packageProductDependencies = (
-				1070F5D32C0C62BF00654AAF /* Raccoon */,
-				1070F5D62C0C634A00654AAF /* RealmSwift */,
-				1070F5DF2C0C676F00654AAF /* LicenseList */,
-				1070F5E32C0C67A400654AAF /* ZIPFoundation */,
-				103C50262C0C70A5008085C8 /* Thunder */,
+				108819EB2C12C9F40064676C /* RealmSwift */,
+				108819EE2C12CA000064676C /* ZIPFoundation */,
+				108819F12C12CA0C0064676C /* LicenseList */,
+				108819F52C12CAED0064676C /* Firebolt */,
+				108819F72C12CB1A0064676C /* Raccoon */,
 			);
 			productName = ThunderApp;
 			productReference = 109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */;
@@ -355,9 +353,9 @@
 			);
 			mainGroup = 109F9AB12C0C5DCD00DD0281;
 			packageReferences = (
-				1070F5D52C0C634A00654AAF /* XCRemoteSwiftPackageReference "realm-swift" */,
-				1070F5DE2C0C676F00654AAF /* XCRemoteSwiftPackageReference "LicenseList" */,
-				1070F5E22C0C67A400654AAF /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */,
+				108819ED2C12CA000064676C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */,
 			);
 			productRefGroup = 109F9ABB2C0C5DCD00DD0281 /* Products */;
 			projectDirPath = "";
@@ -757,23 +755,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1070F5D52C0C634A00654AAF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.50.0;
+				kind = exactVersion;
+				version = 10.50.0;
 			};
 		};
-		1070F5DE2C0C676F00654AAF /* XCRemoteSwiftPackageReference "LicenseList" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/cybozu/LicenseList.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.0;
-			};
-		};
-		1070F5E22C0C67A400654AAF /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+		108819ED2C12CA000064676C /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
 			requirement = {
@@ -781,31 +771,39 @@
 				minimumVersion = 0.9.19;
 			};
 		};
+		108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cybozu/LicenseList.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		103C50262C0C70A5008085C8 /* Thunder */ = {
+		108819EB2C12C9F40064676C /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Thunder;
-		};
-		1070F5D32C0C62BF00654AAF /* Raccoon */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Raccoon;
-		};
-		1070F5D62C0C634A00654AAF /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1070F5D52C0C634A00654AAF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
-		1070F5DF2C0C676F00654AAF /* LicenseList */ = {
+		108819EE2C12CA000064676C /* ZIPFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1070F5DE2C0C676F00654AAF /* XCRemoteSwiftPackageReference "LicenseList" */;
+			package = 108819ED2C12CA000064676C /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		108819F12C12CA0C0064676C /* LicenseList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */;
 			productName = LicenseList;
 		};
-		1070F5E32C0C67A400654AAF /* ZIPFoundation */ = {
+		108819F52C12CAED0064676C /* Firebolt */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1070F5E22C0C67A400654AAF /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
-			productName = ZIPFoundation;
+			productName = Firebolt;
+		};
+		108819F72C12CB1A0064676C /* Raccoon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Raccoon;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
