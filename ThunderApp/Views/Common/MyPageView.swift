@@ -10,9 +10,15 @@ import SwiftUI
 import Raccoon
 
 struct MyPageView: View {
+    @EnvironmentObject private var config: ThunderConfig
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .font(.custom(.Splatfont2, size: 16))
+        ScrollView(content: {
+            LazyVGrid(columns: .init(repeating: .init(.flexible(maximum: 69.13)), count: 4), content: {
+                SignIn()
+                RemoveAll()
+            })
+        })
     }
 }
 

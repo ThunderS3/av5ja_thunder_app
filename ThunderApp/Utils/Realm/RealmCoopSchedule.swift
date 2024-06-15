@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import Thunder
+import Firebolt
 
 final class RealmCoopSchedule: Object, Codable, Identifiable {
     @Persisted(primaryKey: true) var id: String
@@ -22,22 +23,23 @@ final class RealmCoopSchedule: Object, Codable, Identifiable {
     @Persisted var rule: CoopRule
     @Persisted var mode: CoopMode
 
-    override init() { super.init() }
-
-//    convenience init(schedule: StageScheduleQuery.Schedule) {
-//        self.init()
-//        self.id = schedule.id
-//        self.startTime = schedule.startTime
-//        self.endTime = schedule.endTime
-//        self.stageId = schedule.stageId
-//        self.bossId = schedule.bossId
-//        self.weaponList.append(objectsIn: schedule.weaponList)
-//        self.rareWeapons.append(objectsIn: schedule.rareWeapons)
-//        self.results.append(objectsIn: [])
-//        self.rule = schedule.rule
-//        self.mode = schedule.mode
-//    }
-
+    override init() {
+        super.init()
+    }
+    
+    init(schedule: CoopScheduleQuery.Schedule) {
+        super.init()
+        self.id = schedule.id
+        self.startTime = schedule.startTime
+        self.endTime = schedule.endTime
+        self.stageId = schedule.stageId
+        self.bossId = schedule.bossId
+        self.weaponList = .init(contentsOf: schedule.weaponList)
+        self.rareWeapons = .init(contentsOf: schedule.rareWeapons)
+        self.rule = schedule.rule
+        self.mode = schedule.mode
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case id
         case startTime
@@ -65,33 +67,3 @@ final class RealmCoopSchedule: Object, Codable, Identifiable {
         try container.encode(mode, forKey: .mode)
     }
 }
-
-// extension RealmCoopSchedule {
-//    /// スケジュールがランダム編成かどうか
-//    var isRandom: Bool { weaponList.contains(.RandomGold) || weaponList.contains(.RandomGreen) }
-//
-//    var isBigRun: Bool { CoopStage.Id.bigRun.contains(stageId) }
-//
-//    var maxGradeId: CoopGrade.Id? { results.maxGradeId }
-//
-//    var maxGradePoint: Int? { results.maxGradePoint }
-//
-//    var maxGoldenIkuraNum: Int? { results.goldenIkuraNum.max }
-//
-//    static let preview: RealmCoopSchedule = {
-//        let schedule: RealmCoopSchedule = .init()
-//        schedule.weaponList.append(objectsIn: Array(repeating: .RandomGold, count: 4))
-//        schedule.rule = .REGULAR
-//        schedule.mode = .REGULAR
-//        schedule.stageId = .Shakedent
-//        schedule.bossId = .SakeJaw
-//        schedule.rareWeapons.append(objectsIn: [
-//            .BlasterBear, .ChargerBear, .ShelterBear, .SlosherBear, .ManeuverBear, .StringerBear, .SaberBear,
-//        ])
-//        schedule.startTime = Date(rawValue: "2023-12-09 00:00:00 +0000")
-//        schedule.endTime = Date(rawValue: "2023-12-10 16:00:00 +0000")
-//        return schedule
-//    }()
-// }
-//
-// extension StageScheduleQuery.Schedule { var object: RealmCoopSchedule { RealmCoopSchedule(schedule: self) } }

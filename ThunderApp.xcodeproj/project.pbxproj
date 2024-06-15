@@ -7,7 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10297DBA2C187C4F0077CB49 /* MudmouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DB92C187C4F0077CB49 /* MudmouthView.swift */; };
+		10297DBC2C187C8E0077CB49 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DBB2C187C8D0077CB49 /* DescriptionView.swift */; };
+		10297DBF2C187D370077CB49 /* BackgroundWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DBE2C187D370077CB49 /* BackgroundWave.swift */; };
+		10297DC12C1889220077CB49 /* FloatingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DC02C1889220077CB49 /* FloatingButtonStyle.swift */; };
+		10297DC22C1890B00077CB49 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 108819EB2C12C9F40064676C /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		10297DCA2C1891540077CB49 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10297DC92C1891540077CB49 /* NetworkExtension.framework */; };
+		10297DCD2C1891540077CB49 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DCC2C1891540077CB49 /* PacketTunnelProvider.swift */; };
+		10297DD22C1891540077CB49 /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 10297DC82C1891540077CB49 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		103C502A2C0C70D3008085C8 /* PersistableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C50292C0C70D3008085C8 /* PersistableEnum.swift */; };
+		10491B4E2C18F6E30077BDFA /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B4D2C18F6E30077BDFA /* Mudmouth */; };
+		10491B522C18F6F40077BDFA /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B512C18F6F40077BDFA /* Raccoon */; };
+		105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60452C19B6090038DFB5 /* ThunderConfig.swift */; };
+		105B60482C1AAE340038DFB5 /* Firebolt in Frameworks */ = {isa = PBXBuildFile; productRef = 105B60472C1AAE340038DFB5 /* Firebolt */; };
+		105B604A2C1B565D0038DFB5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60492C1B565D0038DFB5 /* RealmManager.swift */; };
+		105B604C2C1B79190038DFB5 /* Realm+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B604B2C1B79190038DFB5 /* Realm+.swift */; };
+		105B604E2C1B79DE0038DFB5 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B604D2C1B79DE0038DFB5 /* ScheduleView.swift */; };
+		105B60502C1B7A800038DFB5 /* NavigationLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B604F2C1B7A800038DFB5 /* NavigationLinker.swift */; };
+		105B60522C1B7AA30038DFB5 /* RealmPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60512C1B7AA30038DFB5 /* RealmPreview.swift */; };
+		105B60542C1B7EF70038DFB5 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60532C1B7EF70038DFB5 /* WebImage.swift */; };
+		105B60572C1B7F0F0038DFB5 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 105B60562C1B7F0F0038DFB5 /* SDWebImageSwiftUI */; };
+		105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60582C1C7D030038DFB5 /* RealmCoopSchedule+.swift */; };
+		105B605C2C1CA7BB0038DFB5 /* RealmSwift+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B605B2C1CA7BB0038DFB5 /* RealmSwift+List.swift */; };
+		105B605E2C1CBC9A0038DFB5 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B605D2C1CBC9A0038DFB5 /* ResultView.swift */; };
+		105B60632C1CC2620038DFB5 /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B60602C1CC2620038DFB5 /* results.json */; };
+		105B60642C1CC2620038DFB5 /* records.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B60612C1CC2620038DFB5 /* records.json */; };
+		105B60652C1CC2620038DFB5 /* schedules.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B60622C1CC2620038DFB5 /* schedules.json */; };
+		105B60672C1CC2940038DFB5 /* weapons.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B60662C1CC2940038DFB5 /* weapons.json */; };
 		1070F5DA2C0C636E00654AAF /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5D92C0C636E00654AAF /* RealmMigration.swift */; };
 		1070F5E62C0C67D400654AAF /* SplitNavigationViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */; };
 		1070F5EB2C0C67FB00654AAF /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1070F5EA2C0C67FB00654AAF /* MyPageView.swift */; };
@@ -23,8 +49,18 @@
 		108819EC2C12C9F40064676C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 108819EB2C12C9F40064676C /* RealmSwift */; };
 		108819EF2C12CA000064676C /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 108819EE2C12CA000064676C /* ZIPFoundation */; };
 		108819F22C12CA0C0064676C /* LicenseList in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F12C12CA0C0064676C /* LicenseList */; };
-		108819F62C12CAED0064676C /* Firebolt in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F52C12CAED0064676C /* Firebolt */; };
-		108819F82C12CB1A0064676C /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 108819F72C12CB1A0064676C /* Raccoon */; };
+		108F48EF2C1CC75F00A6FD11 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48EE2C1CC75F00A6FD11 /* ResultDetailView.swift */; };
+		108F48F12C1CC81600A6FD11 /* Ikura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48F02C1CC81600A6FD11 /* Ikura.swift */; };
+		108F48F32C1CEEF100A6FD11 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48F22C1CEEF100A6FD11 /* Text.swift */; };
+		108F48F62C1CFE4100A6FD11 /* ResultHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48F52C1CFE4100A6FD11 /* ResultHeader.swift */; };
+		108F48F82C1CFF4700A6FD11 /* ResultHeaderWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48F72C1CFF4700A6FD11 /* ResultHeaderWeapon.swift */; };
+		108F48FA2C1D041000A6FD11 /* ResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48F92C1D041000A6FD11 /* ResultStatus.swift */; };
+		108F48FC2C1D0FD600A6FD11 /* ResultJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48FB2C1D0FD600A6FD11 /* ResultJob.swift */; };
+		108F48FE2C1D185200A6FD11 /* ResultWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48FD2C1D185200A6FD11 /* ResultWave.swift */; };
+		108F49002C1D871900A6FD11 /* ResultPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F48FF2C1D871900A6FD11 /* ResultPlayer.swift */; };
+		108F49022C1D8C6A00A6FD11 /* ResultDefeated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F49012C1D8C6A00A6FD11 /* ResultDefeated.swift */; };
+		108F490A2C1DEE8B00A6FD11 /* RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F49092C1DEE8B00A6FD11 /* RemoveAll.swift */; };
+		108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F490B2C1DEF1F00A6FD11 /* SignIn.swift */; };
 		109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */; };
 		109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */; };
 		109F9AC22C0C5DCE00DD0281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109F9AC12C0C5DCE00DD0281 /* Assets.xcassets */; };
@@ -32,9 +68,17 @@
 		109F9ACF2C0C5DCE00DD0281 /* ThunderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ACE2C0C5DCE00DD0281 /* ThunderAppTests.swift */; };
 		109F9AD92C0C5DCE00DD0281 /* ThunderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9AD82C0C5DCE00DD0281 /* ThunderAppUITests.swift */; };
 		109F9ADB2C0C5DCE00DD0281 /* ThunderAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ADA2C0C5DCE00DD0281 /* ThunderAppUITestsLaunchTests.swift */; };
+		10A1949E2C16EBF400025EE6 /* SwiftyLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 10A1949D2C16EBF400025EE6 /* SwiftyLogger */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		10297DD02C1891540077CB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 109F9AB22C0C5DCD00DD0281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10297DC72C1891540077CB49;
+			remoteInfo = PacketTunnel;
+		};
 		109F9ACB2C0C5DCE00DD0281 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 109F9AB22C0C5DCD00DD0281 /* Project object */;
@@ -52,12 +96,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		10297DD62C1891540077CB49 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10297DD22C1891540077CB49 /* PacketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1070F5DC2C0C64F800654AAF /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				10297DC22C1890B00077CB49 /* RealmSwift in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +121,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10297DB92C187C4F0077CB49 /* MudmouthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MudmouthView.swift; sourceTree = "<group>"; };
+		10297DBB2C187C8D0077CB49 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		10297DBE2C187D370077CB49 /* BackgroundWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundWave.swift; sourceTree = "<group>"; };
+		10297DC02C1889220077CB49 /* FloatingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonStyle.swift; sourceTree = "<group>"; };
+		10297DC32C1891400077CB49 /* ThunderApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThunderApp.entitlements; sourceTree = "<group>"; };
+		10297DC82C1891540077CB49 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		10297DC92C1891540077CB49 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		10297DCC2C1891540077CB49 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		10297DCE2C1891540077CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10297DCF2C1891540077CB49 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		103C50292C0C70D3008085C8 /* PersistableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableEnum.swift; sourceTree = "<group>"; };
+		10491B4C2C18F6790077BDFA /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
+		105B60452C19B6090038DFB5 /* ThunderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderConfig.swift; sourceTree = "<group>"; };
+		105B60492C1B565D0038DFB5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		105B604B2C1B79190038DFB5 /* Realm+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+.swift"; sourceTree = "<group>"; };
+		105B604D2C1B79DE0038DFB5 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		105B604F2C1B7A800038DFB5 /* NavigationLinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinker.swift; sourceTree = "<group>"; };
+		105B60512C1B7AA30038DFB5 /* RealmPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPreview.swift; sourceTree = "<group>"; };
+		105B60532C1B7EF70038DFB5 /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
+		105B60582C1C7D030038DFB5 /* RealmCoopSchedule+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCoopSchedule+.swift"; sourceTree = "<group>"; };
+		105B605B2C1CA7BB0038DFB5 /* RealmSwift+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmSwift+List.swift"; sourceTree = "<group>"; };
+		105B605D2C1CBC9A0038DFB5 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		105B60602C1CC2620038DFB5 /* results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = results.json; sourceTree = "<group>"; };
+		105B60612C1CC2620038DFB5 /* records.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = records.json; sourceTree = "<group>"; };
+		105B60622C1CC2620038DFB5 /* schedules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schedules.json; sourceTree = "<group>"; };
+		105B60662C1CC2940038DFB5 /* weapons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weapons.json; sourceTree = "<group>"; };
 		1070F5D92C0C636E00654AAF /* RealmMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMigration.swift; sourceTree = "<group>"; };
 		1070F5DD2C0C65C800654AAF /* AppInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
 		1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitNavigationViewStyle.swift; sourceTree = "<group>"; };
@@ -78,7 +159,18 @@
 		1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopWave.swift; sourceTree = "<group>"; };
 		1070F5F82C0C6AFC00654AAF /* RealmCoopPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopPlayer.swift; sourceTree = "<group>"; };
 		1070F5F92C0C6AFD00654AAF /* RealmCoopEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCoopEnemy.swift; sourceTree = "<group>"; };
-		108819F32C12CA740064676C /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
+		108F48EE2C1CC75F00A6FD11 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
+		108F48F02C1CC81600A6FD11 /* Ikura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ikura.swift; sourceTree = "<group>"; };
+		108F48F22C1CEEF100A6FD11 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		108F48F52C1CFE4100A6FD11 /* ResultHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHeader.swift; sourceTree = "<group>"; };
+		108F48F72C1CFF4700A6FD11 /* ResultHeaderWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultHeaderWeapon.swift; sourceTree = "<group>"; };
+		108F48F92C1D041000A6FD11 /* ResultStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStatus.swift; sourceTree = "<group>"; };
+		108F48FB2C1D0FD600A6FD11 /* ResultJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultJob.swift; sourceTree = "<group>"; };
+		108F48FD2C1D185200A6FD11 /* ResultWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultWave.swift; sourceTree = "<group>"; };
+		108F48FF2C1D871900A6FD11 /* ResultPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPlayer.swift; sourceTree = "<group>"; };
+		108F49012C1D8C6A00A6FD11 /* ResultDefeated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDefeated.swift; sourceTree = "<group>"; };
+		108F49092C1DEE8B00A6FD11 /* RemoveAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAll.swift; sourceTree = "<group>"; };
+		108F490B2C1DEF1F00A6FD11 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThunderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainApp.swift; sourceTree = "<group>"; };
 		109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,15 +184,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10297DC52C1891540077CB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10297DCA2C1891540077CB49 /* NetworkExtension.framework in Frameworks */,
+				10491B4E2C18F6E30077BDFA /* Mudmouth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		109F9AB72C0C5DCD00DD0281 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105B60572C1B7F0F0038DFB5 /* SDWebImageSwiftUI in Frameworks */,
+				10491B522C18F6F40077BDFA /* Raccoon in Frameworks */,
 				108819EC2C12C9F40064676C /* RealmSwift in Frameworks */,
-				108819F82C12CB1A0064676C /* Raccoon in Frameworks */,
+				10A1949E2C16EBF400025EE6 /* SwiftyLogger in Frameworks */,
 				108819F22C12CA0C0064676C /* LicenseList in Frameworks */,
 				108819EF2C12CA000064676C /* ZIPFoundation in Frameworks */,
-				108819F62C12CAED0064676C /* Firebolt in Frameworks */,
+				105B60482C1AAE340038DFB5 /* Firebolt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +224,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10297DB82C187C1F0077CB49 /* Mudmouth */ = {
+			isa = PBXGroup;
+			children = (
+				10297DB92C187C4F0077CB49 /* MudmouthView.swift */,
+				10297DBB2C187C8D0077CB49 /* DescriptionView.swift */,
+				10297DC02C1889220077CB49 /* FloatingButtonStyle.swift */,
+			);
+			path = Mudmouth;
+			sourceTree = "<group>";
+		};
+		10297DBD2C187D280077CB49 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				108F49082C1DEE7E00A6FD11 /* MyPage */,
+				108F48F42C1CFDE400A6FD11 /* Results */,
+				10297DBE2C187D370077CB49 /* BackgroundWave.swift */,
+				105B60532C1B7EF70038DFB5 /* WebImage.swift */,
+				108F48F02C1CC81600A6FD11 /* Ikura.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		10297DCB2C1891540077CB49 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				10297DCC2C1891540077CB49 /* PacketTunnelProvider.swift */,
+				10297DCE2C1891540077CB49 /* Info.plist */,
+				10297DCF2C1891540077CB49 /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
 		103C50282C0C70C5008085C8 /* Persistable */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +264,30 @@
 			path = Persistable;
 			sourceTree = "<group>";
 		};
+		105B605A2C1CA7980038DFB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				105B605B2C1CA7BB0038DFB5 /* RealmSwift+List.swift */,
+				108F48F22C1CEEF100A6FD11 /* Text.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		105B605F2C1CC22C0038DFB5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				105B60612C1CC2620038DFB5 /* records.json */,
+				105B60662C1CC2940038DFB5 /* weapons.json */,
+				105B60602C1CC2620038DFB5 /* results.json */,
+				105B60622C1CC2620038DFB5 /* schedules.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		1070F5D22C0C62BF00654AAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10297DC92C1891540077CB49 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,9 +295,13 @@
 		1070F5D82C0C635D00654AAF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				105B605F2C1CC22C0038DFB5 /* JSON */,
 				1070F5F12C0C6AE000654AAF /* Realm */,
 				1070F5D92C0C636E00654AAF /* RealmMigration.swift */,
+				105B60492C1B565D0038DFB5 /* RealmManager.swift */,
 				1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */,
+				105B60452C19B6090038DFB5 /* ThunderConfig.swift */,
+				105B604F2C1B7A800038DFB5 /* NavigationLinker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -149,6 +309,7 @@
 		1070F5E12C0C678300654AAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10297DB82C187C1F0077CB49 /* Mudmouth */,
 				1070F5E92C0C67EF00654AAF /* Common */,
 				1070F5E82C0C67E600654AAF /* Schedules */,
 				1070F5E72C0C67DB00654AAF /* Results */,
@@ -160,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				1070F5EC2C0C680500654AAF /* ResultsView.swift */,
+				105B605D2C1CBC9A0038DFB5 /* ResultView.swift */,
+				108F48EE2C1CC75F00A6FD11 /* ResultDetailView.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -168,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				1070F5EE2C0C680D00654AAF /* SchedulesView.swift */,
+				105B604D2C1B79DE0038DFB5 /* ScheduleView.swift */,
 			);
 			path = Schedules;
 			sourceTree = "<group>";
@@ -189,19 +353,46 @@
 				1070F5F42C0C6AFC00654AAF /* RealmCoopRecord.swift */,
 				1070F5F52C0C6AFC00654AAF /* RealmCoopResult.swift */,
 				1070F5F62C0C6AFC00654AAF /* RealmCoopSchedule.swift */,
+				105B60582C1C7D030038DFB5 /* RealmCoopSchedule+.swift */,
 				1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */,
+				105B604B2C1B79190038DFB5 /* Realm+.swift */,
+				105B60512C1B7AA30038DFB5 /* RealmPreview.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		108F48F42C1CFDE400A6FD11 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				108F48F92C1D041000A6FD11 /* ResultStatus.swift */,
+				108F48F52C1CFE4100A6FD11 /* ResultHeader.swift */,
+				108F48F72C1CFF4700A6FD11 /* ResultHeaderWeapon.swift */,
+				108F48FB2C1D0FD600A6FD11 /* ResultJob.swift */,
+				108F48FD2C1D185200A6FD11 /* ResultWave.swift */,
+				108F48FF2C1D871900A6FD11 /* ResultPlayer.swift */,
+				108F49012C1D8C6A00A6FD11 /* ResultDefeated.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+		108F49082C1DEE7E00A6FD11 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				108F49092C1DEE8B00A6FD11 /* RemoveAll.swift */,
+				108F490B2C1DEF1F00A6FD11 /* SignIn.swift */,
+			);
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		109F9AB12C0C5DCD00DD0281 = {
 			isa = PBXGroup;
 			children = (
 				1070F5DD2C0C65C800654AAF /* AppInfo.plist */,
-				108819F32C12CA740064676C /* ThunderSDK */,
+				10491B4C2C18F6790077BDFA /* ThunderSDK */,
 				109F9ABC2C0C5DCD00DD0281 /* ThunderApp */,
 				109F9ACD2C0C5DCE00DD0281 /* ThunderAppTests */,
 				109F9AD72C0C5DCE00DD0281 /* ThunderAppUITests */,
+				10297DCB2C1891540077CB49 /* PacketTunnel */,
 				109F9ABB2C0C5DCD00DD0281 /* Products */,
 				1070F5D22C0C62BF00654AAF /* Frameworks */,
 			);
@@ -213,6 +404,7 @@
 				109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */,
 				109F9ACA2C0C5DCE00DD0281 /* ThunderAppTests.xctest */,
 				109F9AD42C0C5DCE00DD0281 /* ThunderAppUITests.xctest */,
+				10297DC82C1891540077CB49 /* PacketTunnel.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +412,9 @@
 		109F9ABC2C0C5DCD00DD0281 /* ThunderApp */ = {
 			isa = PBXGroup;
 			children = (
+				10297DC32C1891400077CB49 /* ThunderApp.entitlements */,
+				105B605A2C1CA7980038DFB5 /* Extensions */,
+				10297DBD2C187D280077CB49 /* Components */,
 				1070F5E12C0C678300654AAF /* Views */,
 				1070F5D82C0C635D00654AAF /* Utils */,
 				109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */,
@@ -258,6 +453,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		10297DC72C1891540077CB49 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10297DD32C1891540077CB49 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				10297DC42C1891540077CB49 /* Sources */,
+				10297DC52C1891540077CB49 /* Frameworks */,
+				10297DC62C1891540077CB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			packageProductDependencies = (
+				10491B4D2C18F6E30077BDFA /* Mudmouth */,
+			);
+			productName = PacketTunnel;
+			productReference = 10297DC82C1891540077CB49 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		109F9AB92C0C5DCD00DD0281 /* ThunderApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 109F9ADE2C0C5DCE00DD0281 /* Build configuration list for PBXNativeTarget "ThunderApp" */;
@@ -266,18 +481,22 @@
 				109F9AB72C0C5DCD00DD0281 /* Frameworks */,
 				109F9AB82C0C5DCD00DD0281 /* Resources */,
 				1070F5DC2C0C64F800654AAF /* Embed Frameworks */,
+				10297DD62C1891540077CB49 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				10297DD12C1891540077CB49 /* PBXTargetDependency */,
 			);
 			name = ThunderApp;
 			packageProductDependencies = (
 				108819EB2C12C9F40064676C /* RealmSwift */,
 				108819EE2C12CA000064676C /* ZIPFoundation */,
 				108819F12C12CA0C0064676C /* LicenseList */,
-				108819F52C12CAED0064676C /* Firebolt */,
-				108819F72C12CB1A0064676C /* Raccoon */,
+				10A1949D2C16EBF400025EE6 /* SwiftyLogger */,
+				10491B512C18F6F40077BDFA /* Raccoon */,
+				105B60472C1AAE340038DFB5 /* Firebolt */,
+				105B60562C1B7F0F0038DFB5 /* SDWebImageSwiftUI */,
 			);
 			productName = ThunderApp;
 			productReference = 109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */;
@@ -330,6 +549,9 @@
 				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = Magi;
 				TargetAttributes = {
+					10297DC72C1891540077CB49 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					109F9AB92C0C5DCD00DD0281 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -356,6 +578,8 @@
 				108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */,
 				108819ED2C12CA000064676C /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */,
+				10A1949C2C16EBF400025EE6 /* XCRemoteSwiftPackageReference "SwiftyLogger" */,
+				105B60552C1B7F0F0038DFB5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 109F9ABB2C0C5DCD00DD0281 /* Products */;
 			projectDirPath = "";
@@ -364,18 +588,30 @@
 				109F9AB92C0C5DCD00DD0281 /* ThunderApp */,
 				109F9AC92C0C5DCE00DD0281 /* ThunderAppTests */,
 				109F9AD32C0C5DCE00DD0281 /* ThunderAppUITests */,
+				10297DC72C1891540077CB49 /* PacketTunnel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		10297DC62C1891540077CB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		109F9AB82C0C5DCD00DD0281 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105B60652C1CC2620038DFB5 /* schedules.json in Resources */,
+				105B60672C1CC2940038DFB5 /* weapons.json in Resources */,
 				1070F5F02C0C692100654AAF /* AppInfo.plist in Resources */,
 				109F9AC52C0C5DCE00DD0281 /* Preview Assets.xcassets in Resources */,
+				105B60632C1CC2620038DFB5 /* results.json in Resources */,
 				109F9AC22C0C5DCE00DD0281 /* Assets.xcassets in Resources */,
+				105B60642C1CC2620038DFB5 /* records.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,24 +632,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		10297DC42C1891540077CB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10297DCD2C1891540077CB49 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		109F9AB62C0C5DCD00DD0281 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105B60522C1B7AA30038DFB5 /* RealmPreview.swift in Sources */,
 				1070F5FF2C0C6AFD00654AAF /* RealmCoopEnemy.swift in Sources */,
+				105B60542C1B7EF70038DFB5 /* WebImage.swift in Sources */,
 				103C502A2C0C70D3008085C8 /* PersistableEnum.swift in Sources */,
+				10297DBA2C187C4F0077CB49 /* MudmouthView.swift in Sources */,
+				105B605E2C1CBC9A0038DFB5 /* ResultView.swift in Sources */,
 				1070F5DA2C0C636E00654AAF /* RealmMigration.swift in Sources */,
+				108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */,
+				108F48F82C1CFF4700A6FD11 /* ResultHeaderWeapon.swift in Sources */,
 				1070F5FA2C0C6AFD00654AAF /* RealmCoopRecord.swift in Sources */,
+				105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */,
+				10297DC12C1889220077CB49 /* FloatingButtonStyle.swift in Sources */,
+				108F48F32C1CEEF100A6FD11 /* Text.swift in Sources */,
 				1070F5FB2C0C6AFD00654AAF /* RealmCoopResult.swift in Sources */,
 				1070F5FE2C0C6AFD00654AAF /* RealmCoopPlayer.swift in Sources */,
+				108F48FA2C1D041000A6FD11 /* ResultStatus.swift in Sources */,
+				105B604C2C1B79190038DFB5 /* Realm+.swift in Sources */,
+				105B604E2C1B79DE0038DFB5 /* ScheduleView.swift in Sources */,
 				1070F5ED2C0C680500654AAF /* ResultsView.swift in Sources */,
 				1070F5EF2C0C680D00654AAF /* SchedulesView.swift in Sources */,
+				108F48EF2C1CC75F00A6FD11 /* ResultDetailView.swift in Sources */,
+				108F48FC2C1D0FD600A6FD11 /* ResultJob.swift in Sources */,
+				108F48FE2C1D185200A6FD11 /* ResultWave.swift in Sources */,
 				1070F5E62C0C67D400654AAF /* SplitNavigationViewStyle.swift in Sources */,
 				1070F5EB2C0C67FB00654AAF /* MyPageView.swift in Sources */,
 				109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */,
+				108F490A2C1DEE8B00A6FD11 /* RemoveAll.swift in Sources */,
+				108F48F62C1CFE4100A6FD11 /* ResultHeader.swift in Sources */,
+				105B605C2C1CA7BB0038DFB5 /* RealmSwift+List.swift in Sources */,
+				105B60502C1B7A800038DFB5 /* NavigationLinker.swift in Sources */,
+				108F49002C1D871900A6FD11 /* ResultPlayer.swift in Sources */,
+				105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */,
+				10297DBF2C187D370077CB49 /* BackgroundWave.swift in Sources */,
 				109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */,
 				1070F5FC2C0C6AFD00654AAF /* RealmCoopSchedule.swift in Sources */,
+				105B604A2C1B565D0038DFB5 /* RealmManager.swift in Sources */,
 				1070F5FD2C0C6AFD00654AAF /* RealmCoopWave.swift in Sources */,
+				108F48F12C1CC81600A6FD11 /* Ikura.swift in Sources */,
+				108F49022C1D8C6A00A6FD11 /* ResultDefeated.swift in Sources */,
+				10297DBC2C187C8E0077CB49 /* DescriptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +707,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		10297DD12C1891540077CB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10297DC72C1891540077CB49 /* PacketTunnel */;
+			targetProxy = 10297DD02C1891540077CB49 /* PBXContainerItemProxy */;
+		};
 		109F9ACC2C0C5DCE00DD0281 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 109F9AB92C0C5DCD00DD0281 /* ThunderApp */;
@@ -450,6 +725,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		10297DD42C1891540077CB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Magi. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus.packetTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10297DD52C1891540077CB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D9HU6JZF2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PacketTunnel;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Magi. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus.packetTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		109F9ADC2C0C5DCE00DD0281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -572,8 +901,10 @@
 		109F9ADF2C0C5DCE00DD0281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
@@ -597,6 +928,10 @@
 				MARKETING_VERSION = 3.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -606,8 +941,10 @@
 		109F9AE02C0C5DCE00DD0281 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
@@ -631,6 +968,10 @@
 				MARKETING_VERSION = 3.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -716,6 +1057,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10297DD32C1891540077CB49 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10297DD42C1891540077CB49 /* Debug */,
+				10297DD52C1891540077CB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		109F9AB52C0C5DCD00DD0281 /* Build configuration list for PBXProject "ThunderApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -755,6 +1105,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		105B60552C1B7F0F0038DFB5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
 		108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -779,9 +1137,34 @@
 				minimumVersion = 0.7.0;
 			};
 		};
+		10A1949C2C16EBF400025EE6 /* XCRemoteSwiftPackageReference "SwiftyLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tkgstrator/SwiftyLogger";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		10491B4D2C18F6E30077BDFA /* Mudmouth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Mudmouth;
+		};
+		10491B512C18F6F40077BDFA /* Raccoon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Raccoon;
+		};
+		105B60472C1AAE340038DFB5 /* Firebolt */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Firebolt;
+		};
+		105B60562C1B7F0F0038DFB5 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 105B60552C1B7F0F0038DFB5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		108819EB2C12C9F40064676C /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 108819EA2C12C9F40064676C /* XCRemoteSwiftPackageReference "realm-swift" */;
@@ -797,13 +1180,10 @@
 			package = 108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */;
 			productName = LicenseList;
 		};
-		108819F52C12CAED0064676C /* Firebolt */ = {
+		10A1949D2C16EBF400025EE6 /* SwiftyLogger */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Firebolt;
-		};
-		108819F72C12CB1A0064676C /* Raccoon */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Raccoon;
+			package = 10A1949C2C16EBF400025EE6 /* XCRemoteSwiftPackageReference "SwiftyLogger" */;
+			productName = SwiftyLogger;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

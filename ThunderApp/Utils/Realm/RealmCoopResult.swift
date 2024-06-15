@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import Firebolt
 import Thunder
 
 final class RealmCoopResult: Object, Codable, Identifiable {
@@ -21,6 +22,7 @@ final class RealmCoopResult: Object, Codable, Identifiable {
     @Persisted var bossId: CoopBossInfo.Id?
     @Persisted var isBossDefeated: Bool?
     @Persisted var ikuraNum: Int
+    @Persisted var stageId: CoopStage.Id
     @Persisted(indexed: true) var goldenIkuraNum: Int
     @Persisted var goldenIkuraAssistNum: Int?
     @Persisted var bossCounts: List<Int>
@@ -40,38 +42,33 @@ final class RealmCoopResult: Object, Codable, Identifiable {
 
     override init() { super.init() }
 
-//    convenience init(result: CoopHistoryDetailQuery.Response) {
-//        self.init()
-//        guard let player: CoopHistoryDetailQuery.MemberResult = result.members.first(where: { $0.isMyself }) else {
-//            fatalError("Given result does not contain the player having a specific nplnUserId.")
-//        }
-//        self.id = result.hash
-//        self.uuid = result.id.uuid
-//        self.nplnUserId = result.id.nplnUserId
-//        self.gradePoint = player.gradePoint
-//        self.gradeId = player.gradeId
-//        self.isClear = result.jobResult.isClear
-//        self.failureWave = result.jobResult.failureWave
-//        self.bossId = result.jobResult.bossId
-//        self.isBossDefeated = result.jobResult.isBossDefeated
-//        self.ikuraNum = result.ikuraNum
-//        self.goldenIkuraNum = result.goldenIkuraNum
-//        self.goldenIkuraAssistNum = result.goldenIkuraAssistNum
-//        self.dangerRate = result.dangerRate.decimal128
-//        self.jobRate = player.jobRate?.decimal128
-//        self.jobScore = player.jobScore
-//        self.jobBonus = player.jobBonus
-//        self.smellMeter = player.smellMeter
-//        self.kumaPoint = player.kumaPoint
-//        self.smellMeter = player.smellMeter
-//        self.playTime = result.id.playTime
-//        self.scale = .init(contentsOf: result.scale)
-//        self.bossCounts.append(objectsIn: result.bossCounts)
-//        self.bossKillCounts.append(objectsIn: result.bossKillCounts)
-//        self.scenarioCode = result.scenarioCode
+    convenience init(result: CoopHistoryDetailQuery.Response) {
+        self.init()
+        guard let player: CoopHistoryDetailQuery.MemberResult = result.members.first(where: { $0.isMyself })
+        else {
+            fatalError("Given result does not contain the player having a specific nplnUserId.")
+        }
+        self.id = result.hash
+        self.uuid = result.id.uuid
+        self.nplnUserId = result.id.nplnUserId
+        self.gradePoint = player.gradePoint
+        self.gradeId = player.gradeId
+        self.isClear = result.jobResult.isClear
+        self.failureWave = result.jobResult.failureWave
+        self.bossId = result.jobResult.bossId
+        self.isBossDefeated = result.jobResult.isBossDefeated
+        self.ikuraNum = result.ikuraNum
+        self.goldenIkuraNum = result.goldenIkuraNum
+        self.goldenIkuraAssistNum = result.goldenIkuraAssistNum
+        self.dangerRate = result.dangerRate.decimal128
+        self.playTime = result.id.playTime
+        self.scale = .init(contentsOf: result.scale)
+        self.bossCounts.append(objectsIn: result.bossCounts)
+        self.bossKillCounts.append(objectsIn: result.bossKillCounts)
+        self.scenarioCode = result.scenarioCode
 //        self.players = .init(contentsOf: result.members.map(\.object))
 //        self.waves = .init(contentsOf: result.waveDetails.map(\.object))
-//    }
+    }
 
     private enum CodingKeys: String, CodingKey {
         case id
@@ -87,13 +84,8 @@ final class RealmCoopResult: Object, Codable, Identifiable {
         case goldenIkuraNum
         case goldenIkuraAssistNum
         case dangerRate
-        case jobRate
-        case kumaPoint
-        case smellMeter
         case playTime
         case scale
-        case jobScore
-        case jobBonus
         case bossCounts
         case bossKillCounts
         case scenarioCode
@@ -116,13 +108,8 @@ final class RealmCoopResult: Object, Codable, Identifiable {
         try encoder.encode(goldenIkuraNum, forKey: .goldenIkuraNum)
         try encoder.encode(goldenIkuraAssistNum, forKey: .goldenIkuraAssistNum)
         try encoder.encode(dangerRate, forKey: .dangerRate)
-        try encoder.encode(jobRate, forKey: .jobRate)
-        try encoder.encode(kumaPoint, forKey: .kumaPoint)
-        try encoder.encode(smellMeter, forKey: .smellMeter)
         try encoder.encode(playTime, forKey: .playTime)
         try encoder.encode(scale, forKey: .scale)
-        try encoder.encode(jobScore, forKey: .jobScore)
-        try encoder.encode(jobBonus, forKey: .jobBonus)
         try encoder.encode(bossCounts, forKey: .bossCounts)
         try encoder.encode(bossKillCounts, forKey: .bossKillCounts)
         try encoder.encode(scenarioCode, forKey: .scenarioCode)

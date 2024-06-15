@@ -23,18 +23,14 @@ struct ContentView: View {
                     Image(systemName: "person.circle.fill")
                     Text("My page")
                 })
-                NavigationView(content: {
-                    ResultsView()
-                })
+                ResultsView()
                 .navigationViewStyle(.split)
                 .tag(1)
                 .tabItem({
                     Image(systemName: "list.dash")
                     Text("Results")
                 })
-                NavigationView(content: {
-                    SchedulesView()
-                })
+                SchedulesView()
                 .navigationViewStyle(.split)
                 .tag(2)
                 .tabItem({

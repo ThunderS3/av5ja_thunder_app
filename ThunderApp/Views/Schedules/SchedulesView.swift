@@ -7,10 +7,30 @@
 //
 
 import SwiftUI
+import RealmSwift
+import Firebolt
 
 struct SchedulesView: View {
+    @Environment(\.realm) private var realm: RealmManager
+    @ObservedResults(RealmCoopSchedule.self) var schedules
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(content: {
+            _body
+        })
+    }
+
+    private var _body: some View {
+        List(content: {
+            ForEach(schedules, content: { schedule in
+                ScheduleView(schedule: schedule)
+            })
+        })
+        .listStyle(.plain)
+        .navigationBarTitleDisplayMode(.inline)
+        .refreshable(action: {
+            try await realm.refresh()
+        })
     }
 }
 
