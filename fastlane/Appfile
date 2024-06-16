@@ -1,0 +1,8 @@
+app_identifier("work.tkgstrator.thunder") # The bundle identifier of your app
+apple_id("crossguitar@live.jp") # Your Apple Developer Portal username
+
+itc_team_id("118733804") # App Store Connect Team ID
+team_id("D9HU6JZF2Q") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
