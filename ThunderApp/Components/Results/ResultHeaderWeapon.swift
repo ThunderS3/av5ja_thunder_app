@@ -20,5 +20,5 @@ struct ResultHeaderWeapon: View {
 }
 
 #Preview {
-    ResultHeaderWeapon(result: .preview)
+    ResultHeaderWeapon(result: .preview())
 }

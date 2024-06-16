@@ -18,6 +18,7 @@ struct ScheduleView: View {
         }, label: {
             _body
         })
+        .disabled(true)
         .listRowInsets(EdgeInsets())
         .listRowSeparator(.hidden)
     }

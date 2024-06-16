@@ -35,7 +35,19 @@ extension RealmCoopSchedule {
 }
 
 extension RealmCoopResult {
-    static let preview: RealmCoopResult = {
+//    static let preview: RealmCoopResult = {
+//        let decoder: JSONDecoder = .init()
+//        decoder.dateDecodingStrategy = .atom
+//        guard let path: String = Bundle.main.path(forResource: "results", ofType: "json"),
+//              let data: Data = try? .init(contentsOf: .init(fileURLWithPath: path)),
+//              let result: CoopHistoryDetailQuery.Response = try? decoder.decode(CoopHistoryDetailQuery.Response.self, from: data)
+//        else {
+//            fatalError("Not Found")
+//        }
+//        return .init(result: result)
+//    }()
+    
+    static func preview() -> RealmCoopResult {
         let decoder: JSONDecoder = .init()
         decoder.dateDecodingStrategy = .atom
         guard let path: String = Bundle.main.path(forResource: "results", ofType: "json"),
@@ -44,8 +56,10 @@ extension RealmCoopResult {
         else {
             fatalError("Not Found")
         }
-        return .init(result: result)
-    }()
+        let object: RealmCoopResult = .init(result: result)
+        object.id = UUID().uuidString
+        return object
+    }
 }
 
 extension RealmCoopWave {

@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 import Firebolt
 import Thunder
+import Realm.Private
 
 final class RealmCoopResult: Object, Codable, Identifiable {
     @Persisted(primaryKey: true) var id: String
@@ -38,24 +39,21 @@ final class RealmCoopResult: Object, Codable, Identifiable {
     @Persisted var scale: List<Int?>
     @Persisted var playTime: Date
     @Persisted var scenarioCode: String?
-    @Persisted(originProperty: "results") private var link: LinkingObjects<RealmCoopSchedule>
+    @Persisted(originProperty: "results") private var schedules: LinkingObjects<RealmCoopSchedule>
 
-    override init() { super.init() }
+    override init() {
+        super.init()
+    }
 
     convenience init(result: CoopHistoryDetailQuery.Response) {
         self.init()
-        guard let player: CoopHistoryDetailQuery.MemberResult = result.members.first(where: { $0.isMyself })
-        else {
-            fatalError("Given result does not contain the player having a specific nplnUserId.")
-        }
         self.id = result.hash
         self.uuid = result.id.uuid
         self.nplnUserId = result.id.nplnUserId
-        self.gradePoint = player.gradePoint
-        self.gradeId = player.gradeId
         self.isClear = result.jobResult.isClear
         self.failureWave = result.jobResult.failureWave
         self.bossId = result.jobResult.bossId
+        self.stageId = result.schedule.stageId
         self.isBossDefeated = result.jobResult.isBossDefeated
         self.ikuraNum = result.ikuraNum
         self.goldenIkuraNum = result.goldenIkuraNum
@@ -66,8 +64,16 @@ final class RealmCoopResult: Object, Codable, Identifiable {
         self.bossCounts.append(objectsIn: result.bossCounts)
         self.bossKillCounts.append(objectsIn: result.bossKillCounts)
         self.scenarioCode = result.scenarioCode
-//        self.players = .init(contentsOf: result.members.map(\.object))
-//        self.waves = .init(contentsOf: result.waveDetails.map(\.object))
+    
+        self.jobRate = result.myResult.jobRate?.decimal128
+        self.jobBonus = result.myResult.jobBonus
+        self.jobScore = result.myResult.jobScore
+        self.kumaPoint = result.myResult.kumaPoint
+        self.gradePoint = result.myResult.gradePoint
+        self.gradeId = result.myResult.gradeId
+        
+        self.players = .init(contentsOf: result.members.map(\.object))
+        self.waves = .init(contentsOf: result.waveDetails.map(\.object))
     }
 
     private enum CodingKeys: String, CodingKey {
@@ -126,12 +132,44 @@ final class RealmCoopResult: Object, Codable, Identifiable {
 //    }
 // }
 
-extension Decimal { var decimal128: Decimal128 { Decimal128(value: self) } }
+extension Decimal {
+    var decimal128: Decimal128 {
+        Decimal128(value: self)
+    }
+}
 
-// extension RealmCoopResult {
-//    /// スケジュール
-//    private var schedule: RealmCoopSchedule { link.first ?? .preview }
-//
+//extension Optional where Wrapped == Decimal {
+//    var decimal128: Decimal128? {
+//        if let value: Decimal = self {
+//            return Decimal128(value: value)
+//        }
+//        return nil
+//    }
+//}
+
+//extension RealmSwift.List where Element == RealmCoopResult {
+//    func append<S: Sequence>(objectsIn objects: S) where S.Iterator.Element == CoopHistoryDetailQuery.Response {
+//        objects.forEach({ object in
+//            let data: RealmCoopResult = .init(result: object)
+//        })
+//    }
+//}
+
+extension RealmCoopResult {
+    /// スケジュール
+    private var schedule: RealmCoopSchedule {
+        schedules.first ?? .preview
+    }
+
+    var weaponList: List<WeaponInfoMain.Id> {
+        schedule.weaponList
+    }
+    
+    var player: RealmCoopPlayer {
+        players.first(where: { $0.isMyself }) ?? .preview
+    }
+}
+     //
 //    /// ステージID
 //    var stageId: CoopStage.Id { schedule.stageId }
 //

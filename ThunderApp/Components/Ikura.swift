@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Raccoon
+import Thunder
 
 @ViewBuilder
 var Ikura: some View {
@@ -18,5 +19,17 @@ var Ikura: some View {
 @ViewBuilder
 var GoldenIkura: some View {
     SPImage(Media.SP2.PNG.GolenIkura)
+        .scaledToFit()
+}
+
+@ViewBuilder
+func Rescue(_ value: Species) -> some View {
+    SPImage(Media.SP2.PNG.Rescue(value))
+        .scaledToFit()
+}
+
+@ViewBuilder
+func Death(_ value: Species) -> some View {
+    SPImage(Media.SP2.PNG.Death(value))
         .scaledToFit()
 }

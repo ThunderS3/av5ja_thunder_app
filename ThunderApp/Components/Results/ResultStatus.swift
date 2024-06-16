@@ -33,33 +33,40 @@ struct ResultStatus: View {
                 .frame(width: 73.32, height: 22)
             })
             Spacer()
-            VStack(alignment: .leading, spacing: 4, content: {
+            VStack(alignment: .leading, spacing: 0, content: {
                 if let gradeId: CoopGrade.Id = result.gradeId,
                    let gradePoint = result.gradePoint {
                     Text(gradeId)
-                        .font(.custom(.Splatfont2, size: 14))
+                        .font(.custom(.Splatfont2, size: 13))
                         .frame(maxWidth: .infinity, alignment: .trailing)
-                    ZStack(alignment: .leading, content: {
+                        .padding(.bottom, 6)
+                    ZStack(alignment: .trailing, content: {
                         GeometryReader(content: { geometry in
-                            Rectangle()
-                                .fill(SPColor.SP2.SPOrange)
-                                .frame(width: geometry.size.width * min(1, CGFloat(gradePoint) * 0.01), height: 15, alignment: .leading)
                             Rectangle()
                                 .fill(SPColor.SP2.SPBackground)
                                 .frame(width: geometry.size.width, height: 15, alignment: .leading)
+                            Rectangle()
+                                .fill(SPColor.SP2.SPOrange)
+                                .frame(width: geometry.size.width * min(1, CGFloat(gradePoint) / 999), height: 15, alignment: .leading)
+                            Text(gradePoint, format: .number)
+                                .foregroundColor(.white)
+                                .font(.custom(.Splatfont2, size: 12))
+                                .padding(.trailing, 4)
+                                .frame(width: geometry.size.width, height: 15, alignment: .trailing)
                         })
                     })
                 }
             })
             .background(content: {
-                Color.blue.opacity(0.3)
+//                Color.blue.opacity(0.3)
             })
-            .frame(width: 160)
+            .frame(width: 190)
         })
+        .padding(.all, 4)
         .frame(height: 48)
     }
 }
 
 #Preview {
-    ResultStatus(result: .preview)
+    ResultStatus(result: .preview())
 }

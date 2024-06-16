@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import Realm.Private
 import Thunder
 import Firebolt
 
@@ -26,18 +27,10 @@ final class RealmCoopSchedule: Object, Codable, Identifiable {
     override init() {
         super.init()
     }
-    
-    init(schedule: CoopScheduleQuery.Schedule) {
+   
+    init<T: Encodable>(schedule: T) {
         super.init()
-        self.id = schedule.id
-        self.startTime = schedule.startTime
-        self.endTime = schedule.endTime
-        self.stageId = schedule.stageId
-        self.bossId = schedule.bossId
-        self.weaponList = .init(contentsOf: schedule.weaponList)
-        self.rareWeapons = .init(contentsOf: schedule.rareWeapons)
-        self.rule = schedule.rule
-        self.mode = schedule.mode
+        RLMInitializeWithValue(self, schedule.dictionaryObject, .partialPrivateShared())
     }
     
     private enum CodingKeys: String, CodingKey {

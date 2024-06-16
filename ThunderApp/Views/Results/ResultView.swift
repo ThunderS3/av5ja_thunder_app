@@ -15,7 +15,8 @@ struct ResultView: View {
 
     var body: some View {
         NavigationLinker(destination: {
-            ResultDetailView(result: result)
+            CarouselView(result: result)
+//            ResultDetailView(result: result)
         }, label: {
             _body
         })
@@ -79,5 +80,5 @@ struct ResultView: View {
 }
 
 #Preview {
-    ResultView(result: .preview)
+    ResultView(result: .preview())
 }

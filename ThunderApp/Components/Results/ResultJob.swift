@@ -13,7 +13,7 @@ struct ResultJob: View {
     let result: RealmCoopResult
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4, content: {
+        VStack(alignment: .leading, spacing: 0, content: {
             Text(LocalizedType.CoopHistoryJobPoint)
             HStack(content: {
                 Spacer()
@@ -25,14 +25,14 @@ struct ResultJob: View {
                 })
                 Text("x")
                 VStack(spacing: 4, content: {
-                    Text(LocalizedType.CoopHistoryScore)
+                    Text(LocalizedType.CoopHistoryJobRatio)
                         .foregroundStyle(SPColor.SP2.SPYellow)
                         .font(.custom(.Splatfont2, size: 12))
                     Text(result.jobRate?.doubleValue ?? 0, format: .number)
                 })
                 Text("+")
                 VStack(spacing: 4, content: {
-                    Text(LocalizedType.CoopHistoryScore)
+                    Text(LocalizedType.CoopHistoryBonus)
                         .foregroundStyle(SPColor.SP2.SPYellow)
                         .font(.custom(.Splatfont2, size: 12))
                     Text(result.jobBonus ?? 0, format: .number)
@@ -45,9 +45,10 @@ struct ResultJob: View {
             })
         })
         .font(.custom(.Splatfont2, size: 14))
+        .padding(.all, 4)
     }
 }
 
 #Preview {
-    ResultJob(result: .preview)
+    ResultJob(result: .preview())
 }

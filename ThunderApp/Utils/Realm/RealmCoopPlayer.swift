@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import Thunder
+import Firebolt
 
 final class RealmCoopPlayer: Object, Identifiable, Codable {
     @Persisted(primaryKey: true) var id: String
@@ -32,38 +33,37 @@ final class RealmCoopPlayer: Object, Identifiable, Codable {
     @Persisted var background: NamePlateBgInfo.Id
     @Persisted var weaponList: List<WeaponInfoMain.Id>
     @Persisted var uniform: CoopSkinInfo.Id
-    @Persisted(originProperty: "players") private var link: LinkingObjects<RealmCoopResult>
-
-    override init() { super.init() }
-
-//    convenience init(result: CoopHistoryDetailQuery.MemberResult) {
-//        self.init()
-//        self.id = result.hash
-//        self.nplnUserId = result.nplnUserId
-//        self.name = result.name
-//        self.byname = result.byname
-//        self.nameId = result.nameId
-//        self.isMyself = result.isMyself
-//        self.deadCount = result.deadCount
-//        self.helpCount = result.helpCount
-//        self.goldenIkuraNum = result.goldenIkuraNum
-//        self.ikuraNum = result.ikuraNum
-//        self.goldenIkuraAssistNum = result.goldenIkuraAssistNum
-//        self.specialId = result.specialId
-//        self.species = result.species
-//        self.bossKillCounts = .init(contentsOf: result.bossKillCounts)
-//        self.bossKillCountsTotal = result.bossKillCountsTotal
-//        self.badges = .init(contentsOf: result.nameplate.badges)
-//        let textColor: TextColor = result.nameplate.background.textColor
-//        self.textColor = .init(
-//            contentsOf: [textColor.r, textColor.g, textColor.b, textColor.a].map({ .init(value: $0) })
-//        )
-//        self.background = result.nameplate.background.id
-//        self.weaponList = .init(contentsOf: result.weaponList)
-//        self.uniform = result.uniform
-//        self.specialCounts = .init(contentsOf: result.specialCounts)
-//    }
-
+    @Persisted(originProperty: "players") private var results: LinkingObjects<RealmCoopResult>
+    
+    override init() {
+        super.init()
+    }
+    
+    convenience init(result: CoopHistoryDetailQuery.MemberResult) {
+        self.init()
+        self.id = result.hash
+        self.nplnUserId = result.nplnUserId
+        self.name = result.name
+        self.byname = result.byname
+        self.nameId = result.nameId
+        self.isMyself = result.isMyself
+        self.deadCount = result.deadCount
+        self.helpCount = result.helpCount
+        self.goldenIkuraNum = result.goldenIkuraNum
+        self.ikuraNum = result.ikuraNum
+        self.goldenIkuraAssistNum = result.goldenIkuraAssistNum
+        self.specialId = result.specialId
+        self.species = result.species
+        self.bossKillCounts = .init(contentsOf: result.bossKillCounts)
+        self.bossKillCountsTotal = result.bossKillCountsTotal
+        self.badges = .init(contentsOf: result.nameplate.badges)
+        self.textColor = result.nameplate.background.textColor.decimal128
+        self.background = result.nameplate.background.id
+        self.weaponList = .init(contentsOf: result.weaponList)
+        self.uniform = result.uniform
+        self.specialCounts = .init(contentsOf: result.specialCounts)
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case id
         case nplnUserId
@@ -87,9 +87,9 @@ final class RealmCoopPlayer: Object, Identifiable, Codable {
         case weaponList
         case uniform
     }
-
-//    init(from decoder: Decoder) throws {}
-
+    
+    //    init(from decoder: Decoder) throws {}
+    
     func encode(to encoder: Encoder) throws {
         var contaienr = encoder.container(keyedBy: CodingKeys.self)
         try contaienr.encode(id, forKey: .id)
@@ -116,38 +116,50 @@ final class RealmCoopPlayer: Object, Identifiable, Codable {
     }
 }
 
-// extension CoopHistoryDetailQuery.MemberResult { var object: RealmCoopPlayer { .init(result: self) } }
-//
-// extension RealmCoopPlayer {
-//    var result: RealmCoopResult { link.first ?? .preview(isClear: true) }
-//
-//    static func preview(specialId: WeaponInfoSpecial.Id, specialCounts: [Int]) -> RealmCoopPlayer {
-//        let player: RealmCoopPlayer = .init()
-//        let uuid: UUID = .init()
-//        player.id = uuid.uuidString
-//        player.nplnUserId = ""
-//        player.name = String(uuid.uuidString.prefix(10))
-//        player.byname = ""
-//        player.nameId = ""
-//        player.isMyself = true
-//        player.deadCount = Int.random(in: 0...20)
-//        player.helpCount = Int.random(in: 0...20)
-//        player.goldenIkuraNum = Int.random(in: 0...200)
-//        player.ikuraNum = Int.random(in: 0...2_000)
-//        player.goldenIkuraAssistNum = Int.random(in: 0...100)
-//        player.specialId = specialId
-//        player.bossKillCounts = .init(contentsOf: Array(repeating: 0, count: 14).map({ _ in Int.random(in: 0...3) }))
-//        player.bossKillCountsTotal = Int.random(in: 0...30)
-//        player.specialCounts = .init(contentsOf: specialCounts)
-//        player.badges = .init(contentsOf: Array(repeating: nil, count: 3))
-//        player.textColor = .init(contentsOf: Array(repeating: 1, count: 4))
-//        player.background = .NplCatalogSeason01Lv01
-//        player.weaponList = .init(
-//            contentsOf: Array(repeating: 0, count: 4).map({ _ in
-//                WeaponInfoMain.Id.allCases.randomElement() ?? .SlosherBear
-//            })
-//        )
-//        player.uniform = .COP001
-//        return player
-//    }
-// }
+extension CoopHistoryDetailQuery.TextColor {
+    var decimal128: List<Decimal128> {
+        .init(contentsOf: [
+            r,
+            g,
+            b,
+            a
+        ].map(\.decimal128))
+    }
+}
+
+extension CoopHistoryDetailQuery.MemberResult {
+    var object: RealmCoopPlayer {
+        .init(result: self)
+    }
+}
+extension RealmCoopPlayer {
+    static var preview: RealmCoopPlayer {
+        let player: RealmCoopPlayer = .init()
+        let uuid: UUID = .init()
+        player.id = uuid.uuidString
+        player.nplnUserId = ""
+        player.name = String(uuid.uuidString.prefix(10))
+        player.byname = ""
+        player.nameId = ""
+        player.isMyself = true
+        player.deadCount = Int.random(in: 0...20)
+        player.helpCount = Int.random(in: 0...20)
+        player.goldenIkuraNum = Int.random(in: 0...200)
+        player.ikuraNum = Int.random(in: 0...2_000)
+        player.goldenIkuraAssistNum = Int.random(in: 0...100)
+        player.specialId = .SpJetpack
+        player.bossKillCounts = .init(contentsOf: Array(repeating: 0, count: 14).map({ _ in Int.random(in: 0...3) }))
+        player.bossKillCountsTotal = Int.random(in: 0...30)
+        player.specialCounts = .init(contentsOf: [0, 1, 1])
+        player.badges = .init(contentsOf: Array(repeating: nil, count: 3))
+        player.textColor = .init(contentsOf: Array(repeating: 1, count: 4))
+        player.background = .NplCatalogSeason01Lv01
+        player.weaponList = .init(
+            contentsOf: Array(repeating: 0, count: 4).map({ _ in
+                WeaponInfoMain.Id.allCases.randomElement() ?? .SlosherBear
+            })
+        )
+        player.uniform = .COP001
+        return player
+    }
+}

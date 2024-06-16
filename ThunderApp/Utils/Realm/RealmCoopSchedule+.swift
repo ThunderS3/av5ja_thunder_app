@@ -19,7 +19,7 @@ extension RealmCoopSchedule {
     var isBigRun: Bool {
         stageId.isBigRun
     }
-
+    
     //    var maxGradeId: CoopGrade.Id? { results.maxGradeId }
     //
     //    var maxGradePoint: Int? { results.maxGradePoint }

@@ -37,24 +37,30 @@ final class RealmManager: Firebolt {
 
     @MainActor
     func refresh() async throws {
-//        try await getCoopRecord()
-//        try await getWeaponRecord()
+        try await getCoopRecord()
+        try await getWeaponRecord()
         let schedules: [CoopScheduleQuery.Schedule] = try await getCoopSchedules().schedules
         inWriteTransaction(transaction: { [self] in
             schedules.forEach({ schedule in
                 realm.update(RealmCoopSchedule.self, value: schedule, update: .modified)
             })
         })
-//        let histories: [CoopResultQuery.CoopHistory] = try await getCoopResults().histories
-//        inWriteTransaction(transaction: { [self] in
-//            histories.forEach({ history in
-//                let schedule: RealmCoopSchedule = realm.update(RealmCoopSchedule.self, value: history.schedule, update: .modified)
-//                let results: [RealmCoopResult] = history.results.map({ result in
-//                    realm.update(RealmCoopResult.self, value: result, update: .modified)
-//                })
-//                schedule.results.append(objectsIn: results)
-//            })
-//        })
+        let histories: [CoopResultQuery.CoopHistory] = try await getCoopResults().histories
+        inWriteTransaction(transaction: { [self] in
+            histories.forEach({ history in
+                // スケジュールがあればそれを使う、なければ作成して利用する
+                let schedule: RealmCoopSchedule = {
+                    realm.object(ofType: RealmCoopSchedule.self, forPrimaryKey: history.schedule.id) ?? .init(schedule: history.schedule)
+                }()
+                history.results.forEach({ result in
+                    let result: RealmCoopResult = .init(result: result)
+                    let data: RealmCoopResult = realm.create(RealmCoopResult.self, value: result, update: .modified)
+                    if !schedule.results.contains(data) {
+                        schedule.results.append(data)
+                    }
+                })
+            })
+        })
     }
 
     @MainActor

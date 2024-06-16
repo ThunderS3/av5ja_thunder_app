@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 import Thunder
+import Firebolt
 
 final class RealmCoopWave: Object, Identifiable, Codable {
     @Persisted(primaryKey: true) var id: String
@@ -19,21 +20,21 @@ final class RealmCoopWave: Object, Identifiable, Codable {
     @Persisted(indexed: true) var goldenIkuraNum: Int?
     @Persisted var quotaNum: Int?
     @Persisted var goldenIkuraPopNum: Int
-    @Persisted(originProperty: "waves") private var link: LinkingObjects<RealmCoopResult>
+    @Persisted(originProperty: "waves") private var results: LinkingObjects<RealmCoopResult>
 
     override init() { super.init() }
 
-//    convenience init(result: CoopHistoryDetailQuery.WaveResult) {
-//        self.init()
-//        self.id = result.hash
-//        self.waveId = result.id
-//        self.isClear = result.isClear
-//        self.waterLevel = result.waterLevel
-//        self.eventType = result.eventType
-//        self.goldenIkuraNum = result.goldenIkuraNum
-//        self.goldenIkuraPopNum = result.goldenIkuraPopNum
-//        self.quotaNum = result.quotaNum
-//    }
+    convenience init(result: CoopHistoryDetailQuery.WaveResult) {
+        self.init()
+        self.id = result.hash
+        self.waveId = result.id
+        self.isClear = result.isClear
+        self.waterLevel = result.waterLevel
+        self.eventType = result.eventType
+        self.goldenIkuraNum = result.goldenIkuraNum
+        self.goldenIkuraPopNum = result.goldenIkuraPopNum
+        self.quotaNum = result.quotaNum
+    }
 
     private enum CodingKeys: String, CodingKey {
         case id
@@ -61,7 +62,11 @@ final class RealmCoopWave: Object, Identifiable, Codable {
     }
 }
 
-// extension CoopHistoryDetailQuery.WaveResult { var object: RealmCoopWave { .init(result: self) } }
+extension CoopHistoryDetailQuery.WaveResult {
+    var object: RealmCoopWave {
+        .init(result: self)
+    }
+}
 //
 // extension RealmCoopWave {
 //    private var result: RealmCoopResult { link.first ?? .preview(isClear: true) }

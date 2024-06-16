@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct ResultDetailView: View {
+    @State private var isPresented: Bool = true
     let result: RealmCoopResult
-
+    
     var body: some View {
         ScrollView(showsIndicators: false, content: {
             VStack(spacing: 2, content: {
@@ -22,14 +23,17 @@ struct ResultDetailView: View {
                         ResultJob(result: result)
                     })
                 })
-                ResultWave(result: result)
+                Divider()
+                ResultWaveSP2(result: result)
+                ResultPlayer(result: result)
                 ResultDefeated(result: result)
             })
+            .environment(\.visible, $isPresented)
             .frame(maxWidth: 460)
         })
     }
 }
 
 #Preview {
-    ResultDetailView(result: .preview)
+    ResultDetailView(result: .preview())
 }

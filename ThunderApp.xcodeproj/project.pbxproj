@@ -61,6 +61,9 @@
 		108F49022C1D8C6A00A6FD11 /* ResultDefeated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F49012C1D8C6A00A6FD11 /* ResultDefeated.swift */; };
 		108F490A2C1DEE8B00A6FD11 /* RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F49092C1DEE8B00A6FD11 /* RemoveAll.swift */; };
 		108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F490B2C1DEF1F00A6FD11 /* SignIn.swift */; };
+		108F490E2C1E116800A6FD11 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F490D2C1E116800A6FD11 /* Encodable.swift */; };
+		108F49102C1F15C100A6FD11 /* EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F490F2C1F15C100A6FD11 /* EnvironmentKey.swift */; };
+		108F49122C1F294700A6FD11 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F49112C1F294700A6FD11 /* CarouselView.swift */; };
 		109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */; };
 		109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */; };
 		109F9AC22C0C5DCE00DD0281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109F9AC12C0C5DCE00DD0281 /* Assets.xcassets */; };
@@ -171,6 +174,9 @@
 		108F49012C1D8C6A00A6FD11 /* ResultDefeated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDefeated.swift; sourceTree = "<group>"; };
 		108F49092C1DEE8B00A6FD11 /* RemoveAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAll.swift; sourceTree = "<group>"; };
 		108F490B2C1DEF1F00A6FD11 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		108F490D2C1E116800A6FD11 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		108F490F2C1F15C100A6FD11 /* EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKey.swift; sourceTree = "<group>"; };
+		108F49112C1F294700A6FD11 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThunderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109F9ABD2C0C5DCD00DD0281 /* mainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainApp.swift; sourceTree = "<group>"; };
 		109F9ABF2C0C5DCD00DD0281 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -302,6 +308,8 @@
 				1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */,
 				105B60452C19B6090038DFB5 /* ThunderConfig.swift */,
 				105B604F2C1B7A800038DFB5 /* NavigationLinker.swift */,
+				108F490D2C1E116800A6FD11 /* Encodable.swift */,
+				108F490F2C1F15C100A6FD11 /* EnvironmentKey.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -323,6 +331,7 @@
 				1070F5EC2C0C680500654AAF /* ResultsView.swift */,
 				105B605D2C1CBC9A0038DFB5 /* ResultView.swift */,
 				108F48EE2C1CC75F00A6FD11 /* ResultDetailView.swift */,
+				108F49112C1F294700A6FD11 /* CarouselView.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -654,6 +663,7 @@
 				108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */,
 				108F48F82C1CFF4700A6FD11 /* ResultHeaderWeapon.swift in Sources */,
 				1070F5FA2C0C6AFD00654AAF /* RealmCoopRecord.swift in Sources */,
+				108F49122C1F294700A6FD11 /* CarouselView.swift in Sources */,
 				105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */,
 				10297DC12C1889220077CB49 /* FloatingButtonStyle.swift in Sources */,
 				108F48F32C1CEEF100A6FD11 /* Text.swift in Sources */,
@@ -674,6 +684,8 @@
 				108F48F62C1CFE4100A6FD11 /* ResultHeader.swift in Sources */,
 				105B605C2C1CA7BB0038DFB5 /* RealmSwift+List.swift in Sources */,
 				105B60502C1B7A800038DFB5 /* NavigationLinker.swift in Sources */,
+				108F490E2C1E116800A6FD11 /* Encodable.swift in Sources */,
+				108F49102C1F15C100A6FD11 /* EnvironmentKey.swift in Sources */,
 				108F49002C1D871900A6FD11 /* ResultPlayer.swift in Sources */,
 				105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */,
 				10297DBF2C187D370077CB49 /* BackgroundWave.swift in Sources */,
@@ -743,7 +755,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus.packetTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.thunder.packetTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -770,7 +782,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus.packetTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.thunder.packetTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -926,7 +938,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.thunder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -966,7 +978,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 3.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.salmonia3plus;
+				PRODUCT_BUNDLE_IDENTIFIER = work.tkgstrator.thunder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
