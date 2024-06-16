@@ -62,7 +62,7 @@ struct ResultPlayer: View {
             .padding(.bottom, 2)
             HStack(spacing: 4, content: {
                 Text(LocalizedType.CoopHistoryDefeatedCount)
-                Text(player.bossKillCountsTotal, format: .number)
+                Text(player.bossKillCountsTotal, format: .number())
             })
             .font(.custom(.Splatfont2, size: 12))
             .foregroundColor(SPColor.SP2.SPYellow)
@@ -75,7 +75,7 @@ struct ResultPlayer: View {
                 HStack(spacing: 0, content: {
                     GoldenIkura
                         .frame(width: 40, height: 20, alignment: .leading)
-                    Text(player.goldenIkuraNum, format: .number)
+                    Text(player.goldenIkuraNum, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })
@@ -84,7 +84,7 @@ struct ResultPlayer: View {
                 HStack(spacing: 0, content: {
                     Rescue(player.species)
                         .frame(width: 40, height: 20, alignment: .leading)
-                    Text(player.helpCount, format: .number)
+                    Text(player.helpCount, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })
@@ -95,7 +95,7 @@ struct ResultPlayer: View {
                 HStack(spacing: 0, content: {
                     Ikura
                         .frame(width: 40, height: 20, alignment: .leading)
-                    Text(player.ikuraNum, format: .number)
+                    Text(player.ikuraNum, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })
@@ -104,7 +104,7 @@ struct ResultPlayer: View {
                 HStack(spacing: 0, content: {
                     Death(player.species)
                         .frame(width: 40, height: 20, alignment: .leading)
-                    Text(player.deadCount, format: .number)
+                    Text(player.deadCount, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })

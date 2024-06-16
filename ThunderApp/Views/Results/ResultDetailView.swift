@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct ResultDetailView: View {
-    @State private var isPresented: Bool = true
     let result: RealmCoopResult
     
     var body: some View {
@@ -28,7 +27,6 @@ struct ResultDetailView: View {
                 ResultPlayer(result: result)
                 ResultDefeated(result: result)
             })
-            .environment(\.visible, $isPresented)
             .frame(maxWidth: 460)
         })
     }

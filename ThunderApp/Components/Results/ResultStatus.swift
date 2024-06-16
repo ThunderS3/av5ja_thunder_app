@@ -10,6 +10,7 @@ import SwiftUI
 import Thunder
 
 struct ResultStatus: View {
+    @State private var scale: CGFloat = .zero
     let result: RealmCoopResult
 
     var body: some View {
@@ -18,7 +19,7 @@ struct ResultStatus: View {
                 HStack(spacing: 0, content: {
                     GoldenIkura
                         .frame(width: 24, height: 20)
-                    Text(result.goldenIkuraNum, format: .number)
+                    Text(result.goldenIkuraNum, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })
@@ -26,7 +27,7 @@ struct ResultStatus: View {
                 HStack(spacing: 0, content: {
                     Ikura
                         .frame(width: 24, height: 20)
-                    Text(result.ikuraNum, format: .number)
+                    Text(result.ikuraNum, format: .number())
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .font(.custom(.Splatfont2, size: 14))
                 })
@@ -47,8 +48,8 @@ struct ResultStatus: View {
                                 .frame(width: geometry.size.width, height: 15, alignment: .leading)
                             Rectangle()
                                 .fill(SPColor.SP2.SPOrange)
-                                .frame(width: geometry.size.width * min(1, CGFloat(gradePoint) / 999), height: 15, alignment: .leading)
-                            Text(gradePoint, format: .number)
+                                .frame(width: geometry.size.width * min(1, CGFloat(gradePoint) / 999) * scale, height: 15, alignment: .leading)
+                            Text(gradePoint, format: .number())
                                 .foregroundColor(.white)
                                 .font(.custom(.Splatfont2, size: 12))
                                 .padding(.trailing, 4)
@@ -57,13 +58,18 @@ struct ResultStatus: View {
                     })
                 }
             })
-            .background(content: {
-//                Color.blue.opacity(0.3)
-            })
             .frame(width: 190)
         })
         .padding(.all, 4)
         .frame(height: 48)
+        .onAppear(perform: {
+            withAnimation(.easeIn(duration: 0.5)) {
+                scale = 1.0
+            }
+        })
+        .onDisappear(perform: {
+            scale = .zero
+        })
     }
 }
 

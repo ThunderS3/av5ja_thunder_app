@@ -36,7 +36,7 @@ struct ResultView: View {
                    let gradePoint: Int = result.gradePoint {
                     HStack(content: {
                         Text(gradeId)
-                        Text(gradePoint, format: .number)
+                        Text(gradePoint, format: .number())
                     })
                     .frame(width: 200.11, alignment: .leading)
                     .font(.custom(.Splatfont1, size: 16))
@@ -54,7 +54,7 @@ struct ResultView: View {
                     GoldenIkura
                         .scaledToFit()
                         .frame(width: 24, height: 20)
-                    Text(result.goldenIkuraNum, format: .number)
+                    Text(result.goldenIkuraNum, format: .number())
                         .font(.custom(.Splatfont2, size: 16))
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 })
@@ -63,7 +63,7 @@ struct ResultView: View {
                     Ikura
                         .scaledToFit()
                         .frame(width: 24, height: 20)
-                    Text(result.ikuraNum, format: .number)
+                    Text(result.ikuraNum, format: .number())
                         .font(.custom(.Splatfont2, size: 16))
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 })

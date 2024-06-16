@@ -71,7 +71,8 @@ final class RealmCoopResult: Object, Codable, Identifiable {
         self.kumaPoint = result.myResult.kumaPoint
         self.gradePoint = result.myResult.gradePoint
         self.gradeId = result.myResult.gradeId
-        
+        self.smellMeter = result.myResult.smellMeter
+
         self.players = .init(contentsOf: result.members.map(\.object))
         self.waves = .init(contentsOf: result.waveDetails.map(\.object))
     }

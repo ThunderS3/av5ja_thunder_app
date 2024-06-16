@@ -84,13 +84,31 @@ struct ResultWaveSP2: View {
         .padding(.top, 4)
     }
     
-    private func _body(wave: RealmCoopWave) -> some View {
-        VStack(spacing: 0, content: {
-            Text("Wave \(wave.waveId)")
+    @ViewBuilder
+    private func _wave(wave: RealmCoopWave) -> some View {
+        switch wave.isExtra {
+        case true:
+            Text(LocalizedType.CoopHistoryExWave)
                 .font(.custom(.Splatfont2, size: 15))
-                .foregroundColor(.black)
+                .foregroundColor(SPColor.SP3.SPSalmonOrange)
                 .padding(.top, 4)
                 .padding(.bottom, 6)
+        case false:
+            HStack(spacing: 2, content: {
+                Text(LocalizedType.CoopHistoryWave)
+                Text(wave.waveId, format: .number)
+            })
+            .font(.custom(.Splatfont2, size: 15))
+            .foregroundColor(.black)
+            .padding(.top, 4)
+            .padding(.bottom, 6)
+        }
+    }
+    
+    @ViewBuilder
+    private func _body(wave: RealmCoopWave) -> some View {
+        VStack(spacing: 0, content: {
+            _wave(wave: wave)
             if let goldenIkuraNum: Int = wave.goldenIkuraNum,
                let quotaNum: Int = wave.quotaNum
             {

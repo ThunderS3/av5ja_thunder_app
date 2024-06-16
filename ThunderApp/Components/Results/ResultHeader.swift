@@ -12,7 +12,7 @@ import RealmSwift
 
 struct ResultHeader: View {
     @Environment(\.visible) var visible
-    @State private var scale: CGFloat = 20
+    @State private var scale: CGFloat = 30
     let result: RealmCoopResult
 
     var body: some View {
@@ -53,7 +53,6 @@ struct ResultHeader: View {
                     .foregroundColor(SPColor.SP2.SPYellow)
                     .rotationEffect(.degrees(-5))
                     .scaleEffect(scale)
-                    .animation(.spring(duration: 0.5, bounce: 0.25), value: scale)
                 }
             })
             .overlay(alignment: .topLeading, content: {
@@ -82,7 +81,12 @@ struct ResultHeader: View {
                     .padding(.top, 4)
             })
             .onAppear(perform: {
-                scale = 1.0
+                withAnimation(.spring(duration: 0.5, bounce: 0.25), {
+                    scale = 1.0
+                })
+            })
+            .onDisappear(perform: {
+                scale = 30
             })
     }
 }

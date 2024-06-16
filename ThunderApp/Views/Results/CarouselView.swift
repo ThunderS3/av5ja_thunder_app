@@ -15,6 +15,7 @@ struct CarouselView: View {
 //        .preview()
 //    ]
     @ObservedResults(RealmCoopResult.self, sortDescriptor: .init(keyPath: "playTime", ascending: false)) var results
+    @State private var isPresented: Bool = true
     let result: RealmCoopResult
     
     var body: some View {
@@ -27,13 +28,13 @@ struct CarouselView: View {
                             .containerRelativeFrame(.horizontal)
                     })
                 })
+                .scrollTargetLayout()
                 .onAppear(perform: {
                     proxy.scrollTo(result.id, anchor: .center)
                 })
-                .scrollTargetLayout()
             })
         })
-//        .contentMargins(.horizontal, 50, for: .scrollContent)
+        .environment(\.visible, $isPresented)
         .scrollTargetBehavior(.viewAligned)
     }
 }

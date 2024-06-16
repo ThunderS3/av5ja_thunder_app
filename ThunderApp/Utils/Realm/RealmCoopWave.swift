@@ -67,10 +67,16 @@ extension CoopHistoryDetailQuery.WaveResult {
         .init(result: self)
     }
 }
-//
-// extension RealmCoopWave {
-//    private var result: RealmCoopResult { link.first ?? .preview(isClear: true) }
-//
+extension RealmCoopWave {
+    private var result: RealmCoopResult {
+        results.first ?? .preview()
+    }
+    
+    var isExtra: Bool {
+        waveId == result.waves.count && quotaNum == nil
+    }
+}
+     //
 //    var specialCounts: [WeaponInfoSpecial.Id] { result.specialCounts[waveId - 1] }
 //
 //    var isExtraWave: Bool { quotaNum == nil }
