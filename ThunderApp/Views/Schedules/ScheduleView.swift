@@ -14,11 +14,11 @@ struct ScheduleView: View {
 
     var body: some View {
         NavigationLinker(destination: {
-            _body
+            ScheduleDetailView(schedule: schedule)
         }, label: {
             _body
         })
-        .disabled(true)
+        .disabled(schedule.results.isEmpty)
         .listRowInsets(EdgeInsets())
         .listRowSeparator(.hidden)
     }

@@ -57,6 +57,24 @@ internal enum Number {
             return String(format: "%.\(precision)f", value.doubleValue)
         }
     }
+    
+    struct PercentFormatStyle<T: BinaryFloatingPoint>: Foundation.FormatStyle where T: CVarArg {
+        typealias FormatInput = Optional<T>
+        typealias FormatOutput = String
+        
+        let precision: Int
+        
+        init(precision: Int = 0) {
+            self.precision = precision
+        }
+        
+        func format(_ value: Optional<T>) -> String {
+            guard let value: T = value else {
+                return "-"
+            }
+            return String(format: "%.\(precision)f%%", value * 100)
+        }
+    }
 }
 
 @available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
@@ -84,5 +102,12 @@ extension FormatStyle where Self == Number.NumberFormatStyle<Double> {
 extension FormatStyle where Self == Number.DecimalFormatStyle<Decimal128> {
     static func number(_ p: Int = 0) -> Number.DecimalFormatStyle<Decimal128> {
         Number.DecimalFormatStyle(precision: p)
+    }
+}
+
+@available(macOS 12.0, iOS 15.0, tvOS 15.0, watchOS 8.0, *)
+extension FormatStyle where Self == Number.PercentFormatStyle<Double> {
+    static func percent(_ p: Int = 0) -> Number.PercentFormatStyle<Double> {
+        Number.PercentFormatStyle(precision: p)
     }
 }

@@ -52,7 +52,7 @@ struct ResultHeader: View {
                     .font(.custom(.Splatfont1, size: 22))
                     .foregroundColor(SPColor.SP2.SPYellow)
                     .rotationEffect(.degrees(-5))
-                    .scaleEffect(scale)
+//                    .scaleEffect(scale)
                 }
             })
             .overlay(alignment: .topLeading, content: {

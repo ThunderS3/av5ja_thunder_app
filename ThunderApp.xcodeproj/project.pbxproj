@@ -16,6 +16,17 @@
 		10297DCD2C1891540077CB49 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10297DCC2C1891540077CB49 /* PacketTunnelProvider.swift */; };
 		10297DD22C1891540077CB49 /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 10297DC82C1891540077CB49 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		103C502A2C0C70D3008085C8 /* PersistableEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C50292C0C70D3008085C8 /* PersistableEnum.swift */; };
+		103EAFEF2C4293A300EBB7E1 /* ScheduleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFEE2C4293A300EBB7E1 /* ScheduleDetailView.swift */; };
+		103EAFF22C42940900EBB7E1 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFF12C42940900EBB7E1 /* ScheduleHeader.swift */; };
+		103EAFF42C4294B200EBB7E1 /* ScheduleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFF32C4294B200EBB7E1 /* ScheduleStatus.swift */; };
+		103EAFF62C4294D900EBB7E1 /* ScheduleWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFF52C4294D900EBB7E1 /* ScheduleWaveView.swift */; };
+		103EAFF82C4294E100EBB7E1 /* ScheduleWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFF72C4294E100EBB7E1 /* ScheduleWave.swift */; };
+		103EAFFA2C4294F100EBB7E1 /* ScheduleScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFF92C4294F100EBB7E1 /* ScheduleScale.swift */; };
+		103EAFFC2C4294FA00EBB7E1 /* SchedulePointCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFFB2C4294FA00EBB7E1 /* SchedulePointCard.swift */; };
+		103EAFFE2C4295A000EBB7E1 /* RealmCollection+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */; };
+		103EB0002C4295D500EBB7E1 /* List+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */; };
+		103EB0032C42AF9300EBB7E1 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 103EB0022C42AF9300EBB7E1 /* SDWebImageSVGCoder */; };
+		103EB0062C42AFF700EBB7E1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 103EB0052C42AFF700EBB7E1 /* SDWebImage */; };
 		10491B4E2C18F6E30077BDFA /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B4D2C18F6E30077BDFA /* Mudmouth */; };
 		10491B522C18F6F40077BDFA /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B512C18F6F40077BDFA /* Raccoon */; };
 		105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60452C19B6090038DFB5 /* ThunderConfig.swift */; };
@@ -136,6 +147,15 @@
 		10297DCE2C1891540077CB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10297DCF2C1891540077CB49 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
 		103C50292C0C70D3008085C8 /* PersistableEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistableEnum.swift; sourceTree = "<group>"; };
+		103EAFEE2C4293A300EBB7E1 /* ScheduleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDetailView.swift; sourceTree = "<group>"; };
+		103EAFF12C42940900EBB7E1 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
+		103EAFF32C4294B200EBB7E1 /* ScheduleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStatus.swift; sourceTree = "<group>"; };
+		103EAFF52C4294D900EBB7E1 /* ScheduleWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWaveView.swift; sourceTree = "<group>"; };
+		103EAFF72C4294E100EBB7E1 /* ScheduleWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWave.swift; sourceTree = "<group>"; };
+		103EAFF92C4294F100EBB7E1 /* ScheduleScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleScale.swift; sourceTree = "<group>"; };
+		103EAFFB2C4294FA00EBB7E1 /* SchedulePointCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePointCard.swift; sourceTree = "<group>"; };
+		103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Result.swift"; sourceTree = "<group>"; };
+		103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Collection.swift"; sourceTree = "<group>"; };
 		10491B4C2C18F6790077BDFA /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
 		105B60452C19B6090038DFB5 /* ThunderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderConfig.swift; sourceTree = "<group>"; };
 		105B60492C1B565D0038DFB5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -211,7 +231,9 @@
 				10A1949E2C16EBF400025EE6 /* SwiftyLogger in Frameworks */,
 				108819F22C12CA0C0064676C /* LicenseList in Frameworks */,
 				108819EF2C12CA000064676C /* ZIPFoundation in Frameworks */,
+				103EB0062C42AFF700EBB7E1 /* SDWebImage in Frameworks */,
 				105B60482C1AAE340038DFB5 /* Firebolt in Frameworks */,
+				103EB0032C42AF9300EBB7E1 /* SDWebImageSVGCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +267,7 @@
 		10297DBD2C187D280077CB49 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				103EAFF02C4293FD00EBB7E1 /* Schedules */,
 				108F49082C1DEE7E00A6FD11 /* MyPage */,
 				108F48F42C1CFDE400A6FD11 /* Results */,
 				10297DBE2C187D370077CB49 /* BackgroundWave.swift */,
@@ -270,6 +293,18 @@
 				103C50292C0C70D3008085C8 /* PersistableEnum.swift */,
 			);
 			path = Persistable;
+			sourceTree = "<group>";
+		};
+		103EAFF02C4293FD00EBB7E1 /* Schedules */ = {
+			isa = PBXGroup;
+			children = (
+				103EAFF12C42940900EBB7E1 /* ScheduleHeader.swift */,
+				103EAFF32C4294B200EBB7E1 /* ScheduleStatus.swift */,
+				103EAFF72C4294E100EBB7E1 /* ScheduleWave.swift */,
+				103EAFF92C4294F100EBB7E1 /* ScheduleScale.swift */,
+				103EAFFB2C4294FA00EBB7E1 /* SchedulePointCard.swift */,
+			);
+			path = Schedules;
 			sourceTree = "<group>";
 		};
 		105B605A2C1CA7980038DFB5 /* Extensions */ = {
@@ -313,6 +348,7 @@
 				105B604F2C1B7A800038DFB5 /* NavigationLinker.swift */,
 				108F490D2C1E116800A6FD11 /* Encodable.swift */,
 				108F490F2C1F15C100A6FD11 /* EnvironmentKey.swift */,
+				103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -344,6 +380,8 @@
 			children = (
 				1070F5EE2C0C680D00654AAF /* SchedulesView.swift */,
 				105B604D2C1B79DE0038DFB5 /* ScheduleView.swift */,
+				103EAFEE2C4293A300EBB7E1 /* ScheduleDetailView.swift */,
+				103EAFF52C4294D900EBB7E1 /* ScheduleWaveView.swift */,
 			);
 			path = Schedules;
 			sourceTree = "<group>";
@@ -369,6 +407,7 @@
 				1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */,
 				105B604B2C1B79190038DFB5 /* Realm+.swift */,
 				105B60512C1B7AA30038DFB5 /* RealmPreview.swift */,
+				103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -509,6 +548,8 @@
 				10491B512C18F6F40077BDFA /* Raccoon */,
 				105B60472C1AAE340038DFB5 /* Firebolt */,
 				105B60562C1B7F0F0038DFB5 /* SDWebImageSwiftUI */,
+				103EB0022C42AF9300EBB7E1 /* SDWebImageSVGCoder */,
+				103EB0052C42AFF700EBB7E1 /* SDWebImage */,
 			);
 			productName = ThunderApp;
 			productReference = 109F9ABA2C0C5DCD00DD0281 /* ThunderApp.app */;
@@ -592,6 +633,8 @@
 				108819F02C12CA0C0064676C /* XCRemoteSwiftPackageReference "LicenseList" */,
 				10A1949C2C16EBF400025EE6 /* XCRemoteSwiftPackageReference "SwiftyLogger" */,
 				105B60552C1B7F0F0038DFB5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				103EB0012C42AF9300EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
+				103EB0042C42AFF700EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 109F9ABB2C0C5DCD00DD0281 /* Products */;
 			projectDirPath = "";
@@ -656,6 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103EAFF82C4294E100EBB7E1 /* ScheduleWave.swift in Sources */,
 				105B60522C1B7AA30038DFB5 /* RealmPreview.swift in Sources */,
 				1070F5FF2C0C6AFD00654AAF /* RealmCoopEnemy.swift in Sources */,
 				105B60542C1B7EF70038DFB5 /* WebImage.swift in Sources */,
@@ -668,6 +712,9 @@
 				1070F5FA2C0C6AFD00654AAF /* RealmCoopRecord.swift in Sources */,
 				108F49122C1F294700A6FD11 /* CarouselView.swift in Sources */,
 				105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */,
+				103EAFF62C4294D900EBB7E1 /* ScheduleWaveView.swift in Sources */,
+				103EAFF42C4294B200EBB7E1 /* ScheduleStatus.swift in Sources */,
+				103EB0002C4295D500EBB7E1 /* List+Collection.swift in Sources */,
 				10297DC12C1889220077CB49 /* FloatingButtonStyle.swift in Sources */,
 				108F48F32C1CEEF100A6FD11 /* Text.swift in Sources */,
 				1070F5FB2C0C6AFD00654AAF /* RealmCoopResult.swift in Sources */,
@@ -677,13 +724,17 @@
 				105B604E2C1B79DE0038DFB5 /* ScheduleView.swift in Sources */,
 				1070F5ED2C0C680500654AAF /* ResultsView.swift in Sources */,
 				1070F5EF2C0C680D00654AAF /* SchedulesView.swift in Sources */,
+				103EAFF22C42940900EBB7E1 /* ScheduleHeader.swift in Sources */,
 				108F48EF2C1CC75F00A6FD11 /* ResultDetailView.swift in Sources */,
+				103EAFFE2C4295A000EBB7E1 /* RealmCollection+Result.swift in Sources */,
 				108F48FC2C1D0FD600A6FD11 /* ResultJob.swift in Sources */,
 				108F48FE2C1D185200A6FD11 /* ResultWave.swift in Sources */,
 				1070F5E62C0C67D400654AAF /* SplitNavigationViewStyle.swift in Sources */,
 				1070F5EB2C0C67FB00654AAF /* MyPageView.swift in Sources */,
+				103EAFEF2C4293A300EBB7E1 /* ScheduleDetailView.swift in Sources */,
 				107F63F12C1F87B900DF6328 /* FormatStyle.swift in Sources */,
 				109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */,
+				103EAFFC2C4294FA00EBB7E1 /* SchedulePointCard.swift in Sources */,
 				108F490A2C1DEE8B00A6FD11 /* RemoveAll.swift in Sources */,
 				108F48F62C1CFE4100A6FD11 /* ResultHeader.swift in Sources */,
 				105B605C2C1CA7BB0038DFB5 /* RealmSwift+List.swift in Sources */,
@@ -698,6 +749,7 @@
 				105B604A2C1B565D0038DFB5 /* RealmManager.swift in Sources */,
 				1070F5FD2C0C6AFD00654AAF /* RealmCoopWave.swift in Sources */,
 				108F48F12C1CC81600A6FD11 /* Ikura.swift in Sources */,
+				103EAFFA2C4294F100EBB7E1 /* ScheduleScale.swift in Sources */,
 				108F49022C1D8C6A00A6FD11 /* ResultDefeated.swift in Sources */,
 				10297DBC2C187C8E0077CB49 /* DescriptionView.swift in Sources */,
 			);
@@ -746,7 +798,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
@@ -773,7 +825,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
@@ -922,7 +974,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				ENABLE_PREVIEWS = YES;
@@ -962,7 +1014,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				ENABLE_PREVIEWS = YES;
@@ -1000,7 +1052,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -1020,7 +1072,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -1039,7 +1091,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1057,7 +1109,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1121,6 +1173,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		103EB0012C42AF9300EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		103EB0042C42AFF700EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
 		105B60552C1B7F0F0038DFB5 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -1164,6 +1232,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		103EB0022C42AF9300EBB7E1 /* SDWebImageSVGCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 103EB0012C42AF9300EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
+			productName = SDWebImageSVGCoder;
+		};
+		103EB0052C42AFF700EBB7E1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 103EB0042C42AFF700EBB7E1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		10491B4D2C18F6E30077BDFA /* Mudmouth */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Mudmouth;

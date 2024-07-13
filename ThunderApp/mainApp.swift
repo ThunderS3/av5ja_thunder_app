@@ -9,6 +9,7 @@ import SwiftUI
 import Raccoon
 import SwiftyLogger
 import Firebolt
+import SDWebImageSVGCoder
 
 @main
 struct mainApp: App {
@@ -50,7 +51,8 @@ struct mainApp: App {
             }
 
             UNUserNotificationCenter.current().delegate = self
-
+            SDImageCodersManager.shared.addCoder(SDImageSVGCoder.shared)
+            
             Raccoon.configure()
             return true
         }
