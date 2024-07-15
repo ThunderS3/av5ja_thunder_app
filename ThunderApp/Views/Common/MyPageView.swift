@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Raccoon
+import Thunder
 
 struct MyPageView: View {
     @EnvironmentObject private var config: ThunderConfig
@@ -34,6 +35,8 @@ struct MyPageView: View {
                 }
             )
         })
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(Text(LocalizedType.CommonMyPage))
     }
 }
 

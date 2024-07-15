@@ -22,7 +22,11 @@ enum RealmMigration {
         deleteRealmIfMigrationNeeded: true
     )
     
+#if targetEnvironment(simulator)
+    static let realm: Realm = try! .init()
+#else
     static let realm: Realm = try! .init(configuration: configuration)
+#endif
     
     static func migrationBlock() -> MigrationBlock? {
         return { _, _ in

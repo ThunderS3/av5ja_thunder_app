@@ -11,12 +11,19 @@ import Thunder
 import Raccoon
 
 struct ResultView: View {
+    @EnvironmentObject private var config: ThunderConfig
     let result: RealmCoopResult
 
     var body: some View {
         NavigationLinker(destination: {
-            CarouselView(result: result)
-//            ResultDetailView(result: result)
+            switch config.resultDisplayMode {
+            case .SINGLE:
+                ResultDetailView(result: result)
+            case .TAB:
+                CarouselTabView(result: result)
+            case .CAROUSEL:
+                CarouselView(result: result)
+            }
         }, label: {
             _body
         })

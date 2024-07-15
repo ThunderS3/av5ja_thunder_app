@@ -16,6 +16,7 @@ struct License: View {
     var body: some View {
         NavigationLink(destination: {
             LicenseListView()
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationTitle(Text(LocalizedType.CommonLicense))
         }, label: {
             Text(LocalizedType.SettingsAcknowledgements)

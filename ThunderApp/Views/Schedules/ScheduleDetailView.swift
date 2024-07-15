@@ -16,6 +16,7 @@ struct ScheduleDetailView: View {
         ScrollView(content: {
             _body
         })
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text(LocalizedType.StageScheduleTitle))
     }
     

@@ -14,7 +14,7 @@ public struct NavigationLinker<Destination: View, Label: View>: View {
     let destination: () -> Destination
     let label: () -> Label
 
-    public init(destination: @escaping () -> Destination, @ViewBuilder label: @escaping () -> Label) {
+    public init(@ViewBuilder destination: @escaping () -> Destination, @ViewBuilder label: @escaping () -> Label) {
         self.destination = destination
         self.label = label
     }

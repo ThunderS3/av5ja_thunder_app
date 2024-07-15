@@ -28,6 +28,7 @@ struct StageView: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .tag(CoopRule.BIG_RUN)
                 })
+            .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(Text(LocalizedType.RecordStageRecord))
             .tabViewStyle(.page)
         })

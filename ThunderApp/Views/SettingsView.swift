@@ -14,37 +14,33 @@ struct SettingsView: View {
     
     var body: some View {
         Form(content: {
-            Section(
-                content: {
-                    UseSystemScheme()
-                    UseDarkTheme()
-                    UseGamingMode()
-                },
-                header: {
-                    Text(LocalizedType.CommonAppearances)
-                        .font(.custom(.Splatfont1, size: 16))
-                })
-            Section(
-                content: {
-                    AppVersion()
-                    BuildNumber()
-                    SystemVersion()
-                },
-                header: {
-                    Text(LocalizedType.CommonApplication)
-                        .font(.custom(.Splatfont1, size: 16))
-                })
-            Section(
-                content: {
-                    SignIn()
-                    RemoveAll()
-                },
-                header: {
-                    Text(LocalizedType.CommonDataManagement)
-                        .font(.custom(.Splatfont1, size: 16))
-                })
+            Section(content: {
+                UseSystemScheme()
+                UseDarkTheme()
+                UseGamingMode()
+                ResultDisplayMode()
+            }, header: {
+                Text(LocalizedType.CommonAppearances)
+                    .font(.custom(.Splatfont1, size: 16))
+            })
+            Section(content: {
+                AppVersion()
+                BuildNumber()
+                SystemVersion()
+            }, header: {
+                Text(LocalizedType.CommonApplication)
+                    .font(.custom(.Splatfont1, size: 16))
+            })
+            Section(content: {
+                SignIn()
+                RemoveAll()
+            },header: {
+                Text(LocalizedType.CommonDataManagement)
+                    .font(.custom(.Splatfont1, size: 16))
+            })
         })
         .font(.custom(.Splatfont2, size: 16))
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text(LocalizedType.SettingsTitle))
     }
     
@@ -74,7 +70,7 @@ struct SettingsView: View {
                 Text(LocalizedType.CommonGamingMode)
             })
     }
-    
+
     @ViewBuilder
     private func AppVersion() -> some View {
         HStack(content: {
@@ -84,7 +80,7 @@ struct SettingsView: View {
                 .foregroundColor(.secondary)
         })
     }
-
+    
     @ViewBuilder
     private func BuildNumber() -> some View {
         HStack(content: {
@@ -94,7 +90,7 @@ struct SettingsView: View {
                 .foregroundColor(.secondary)
         })
     }
-
+    
     @ViewBuilder
     private func SystemVersion() -> some View {
         HStack(content: {
@@ -103,6 +99,21 @@ struct SettingsView: View {
             Text(UIDevice.current.systemVersion)
                 .foregroundColor(.secondary)
         })
+    }
+    
+    private struct ResultDisplayMode: View {
+        @EnvironmentObject private var config: ThunderConfig
+        
+        var body: some View {
+            Picker(selection: config.$resultDisplayMode, content: {
+                ForEach(DisplayMode.allCases, content: { mode in
+                    Text(mode.rawValue)
+                        .tag(mode)
+                })
+            }, label: {
+                Text("リザルト表示モード")
+            })
+        }
     }
     
     private struct SignIn: View {

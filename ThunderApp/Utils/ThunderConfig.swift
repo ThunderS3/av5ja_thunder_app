@@ -19,10 +19,11 @@ internal class ThunderConfig: ObservableObject {
 #else
     @AppStorage("APP_FIRST_LAUNCH") var isFirstLaunch: Bool = true
 #endif
-    @AppStorage("APP_PREFERRED_COLOR_SCHEME") var usePreferredColorScheme = true
-    @AppStorage("APP_SYSTEM_COLOR_SCHEME") var useSystemColorScheme = true
-    @AppStorage("APP_RESULTS_GAMING_MODE") var useGamingModeResults = true
-    
+    @AppStorage("APP_PREFERRED_COLOR_SCHEME") var usePreferredColorScheme: Bool = true
+    @AppStorage("APP_SYSTEM_COLOR_SCHEME") var useSystemColorScheme: Bool = true
+    @AppStorage("APP_RESULTS_GAMING_MODE") var useGamingModeResults: Bool = true
+    @AppStorage("APP_RESULTS_DISPLAY_MODE") var resultDisplayMode: DisplayMode = .SINGLE
+
     var preferredColorScheme: UIUserInterfaceStyle {
         useSystemColorScheme
         ? UITraitCollection.current.userInterfaceStyle

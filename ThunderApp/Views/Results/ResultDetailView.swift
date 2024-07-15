@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Thunder
 
 struct ResultDetailView: View {
     let result: RealmCoopResult
@@ -29,6 +30,8 @@ struct ResultDetailView: View {
             })
             .frame(maxWidth: 460)
         })
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(Text(LocalizedType.CoopHistoryHistory))
     }
 }
 

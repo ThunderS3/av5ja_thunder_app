@@ -16,6 +16,7 @@ struct WeaponListView: View {
         ScrollView(content: {
             _body
         })
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text(LocalizedType.CoopHistorySupplyWeapon))
     }
    

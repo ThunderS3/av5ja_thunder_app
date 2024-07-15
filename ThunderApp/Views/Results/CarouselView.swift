@@ -35,6 +35,32 @@ struct CarouselView: View {
     }
 }
 
-//#Preview {
-//    CarouselView()
-//}
+struct CarouselTabView: View {
+    @ObservedResults(RealmCoopResult.self, sortDescriptor: .init(keyPath: "playTime", ascending: false)) var results
+    @State private var isPresented: Bool = true
+    @State private var selection: String
+    let result: RealmCoopResult
+    
+    init(result: RealmCoopResult) {
+        self.result = result
+        self._selection = .init(initialValue: result.id)
+    }
+    
+    var body: some View {
+        TabView(selection: $selection, content: {
+            ForEach(results, content: { result in
+                ResultDetailView(result: result)
+                    .id(result.id)
+                    .tag(result.id)
+                    .containerRelativeFrame(.horizontal)
+                    .padding(.horizontal, 16)
+            })
+        })
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .environment(\.visible, $isPresented)
+    }
+}
+
+#Preview {
+    ResultsView()
+}

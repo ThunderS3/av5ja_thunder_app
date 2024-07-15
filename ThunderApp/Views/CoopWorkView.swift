@@ -18,6 +18,7 @@ struct CoopWorkView: View {
             ScrollView(content: {
                 _body
             })
+            .navigationBarTitleDisplayMode(.inline)
             .navigationTitle(Text(LocalizedType.CoopHistoryEnemy))
         })
     }

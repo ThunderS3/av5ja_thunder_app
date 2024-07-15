@@ -88,6 +88,11 @@ final class RealmManager: Firebolt, ObservableObject {
             realm.deleteAll()
         })
     }
+    
+    @MainActor
+    private var lastPlayedTime: Date {
+        realm.objects(RealmCoopResult.self).max(ofProperty: "playTime") ?? .init(timeIntervalSince1970: 0)
+    }
 }
 
 extension EnvironmentValues {

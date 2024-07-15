@@ -9,6 +9,7 @@
 import SwiftUI
 import RealmSwift
 import Firebolt
+import Thunder
 
 struct SchedulesView: View {
     @Environment(\.manager) private var manager: RealmManager
@@ -28,6 +29,7 @@ struct SchedulesView: View {
         })
         .listStyle(.plain)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(Text(LocalizedType.CoopHistoryTitle))
         .refreshable(action: {
             try await manager.refresh()
         })

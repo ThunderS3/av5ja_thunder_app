@@ -21,6 +21,7 @@ struct ScheduleWaveView: View {
         ScrollView(content: {
             _body
         })
+        .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text(LocalizedType.CoopHistoryWave))
     }
     
