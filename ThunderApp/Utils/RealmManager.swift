@@ -13,10 +13,9 @@ import SwiftyLogger
 import RealmSwift
 import Raccoon
 
-@Observable
-final class RealmManager: Firebolt {
-    private var realm: Realm = try! Realm()
-
+final class RealmManager: Firebolt, ObservableObject {
+    private let realm: Realm = RealmMigration.realm
+    
     @discardableResult
     /// ブキ画像取得
     /// - Returns: <#description#>
@@ -31,6 +30,14 @@ final class RealmManager: Firebolt {
     /// - Returns: <#description#>
     override func getCoopRecord() async throws -> CoopRecordQuery.Response {
         let response = try await super.getCoopRecord()
+        await inWriteTransaction(transaction: { [self] in
+            response.enemyRecords.forEach({ enemy in
+                realm.update(RealmCoopEnemy.self, value: enemy, update: .modified)
+            })
+            response.stageRecords.forEach({ stage in
+                realm.update(RealmCoopRecord.self, value: stage, update: .modified)
+            })
+        })
         try await Raccoon.fetch(urls: response.assetURLs)
         return response
     }
@@ -39,13 +46,14 @@ final class RealmManager: Firebolt {
     func refresh() async throws {
         try await getCoopRecord()
         try await getWeaponRecord()
+        let lastPlayedTime: Date = realm.objects(RealmCoopResult.self).max(ofProperty: "playTime") ?? .init(timeIntervalSince1970: 0)
         let schedules: [CoopScheduleQuery.Schedule] = try await getCoopSchedules().schedules
         inWriteTransaction(transaction: { [self] in
             schedules.forEach({ schedule in
                 realm.update(RealmCoopSchedule.self, value: schedule, update: .modified)
             })
         })
-        let histories: [CoopResultQuery.CoopHistory] = try await getCoopResults().histories
+        let histories: [CoopResultQuery.CoopHistory] = try await getCoopResults(lastPlayedTime: lastPlayedTime).histories
         inWriteTransaction(transaction: { [self] in
             histories.forEach({ history in
                 // スケジュールがあればそれを使う、なければ作成して利用する
@@ -83,12 +91,21 @@ final class RealmManager: Firebolt {
 }
 
 extension EnvironmentValues {
-    var realm: RealmManager {
+    var realm: Realm {
         get { self[RealmKey.self] }
         set { self[RealmKey.self] = newValue }
     }
+    
+    var manager: RealmManager {
+        get { self[RealmManagerKey.self] }
+        set { self[RealmManagerKey.self] = newValue }
+    }
+}
+
+private struct RealmManagerKey: EnvironmentKey {
+    static var defaultValue: RealmManager = .init()
 }
 
 private struct RealmKey: EnvironmentKey {
-    static var defaultValue: RealmManager = .init()
+    static var defaultValue: Realm = RealmMigration.realm
 }

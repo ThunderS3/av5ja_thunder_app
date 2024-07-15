@@ -41,6 +41,21 @@
 		103EB0202C44971700EBB7E1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB01F2C44971700EBB7E1 /* SettingsView.swift */; };
 		103EB0222C44A85400EBB7E1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0212C44A85400EBB7E1 /* View.swift */; };
 		103EB0242C44A92100EBB7E1 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0232C44A92100EBB7E1 /* UIApplication.swift */; };
+		103EB0262C44AEA100EBB7E1 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0252C44AEA100EBB7E1 /* UIDevice.swift */; };
+		103EB0282C44BA6700EBB7E1 /* CoopWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0272C44BA6700EBB7E1 /* CoopWork.swift */; };
+		103EB02A2C44BAFD00EBB7E1 /* CoopWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0292C44BAFD00EBB7E1 /* CoopWorkView.swift */; };
+		103EB02C2C44BBF300EBB7E1 /* Stages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB02B2C44BBF300EBB7E1 /* Stages.swift */; };
+		103EB02E2C44BC3C00EBB7E1 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB02D2C44BC3C00EBB7E1 /* StageView.swift */; };
+		103EB0302C452C9900EBB7E1 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB02F2C452C9900EBB7E1 /* Management.swift */; };
+		103EB0322C452CD500EBB7E1 /* FilterPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0312C452CD500EBB7E1 /* FilterPickView.swift */; };
+		103EB0342C452E3900EBB7E1 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0332C452E3900EBB7E1 /* Backup.swift */; };
+		103EB0362C452E6000EBB7E1 /* Restore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0352C452E6000EBB7E1 /* Restore.swift */; };
+		103EB0382C452EC200EBB7E1 /* RealmSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0372C452EC200EBB7E1 /* RealmSigner.swift */; };
+		103EB03A2C452F3800EBB7E1 /* SignedRealmCoopResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0392C452F3800EBB7E1 /* SignedRealmCoopResult.swift */; };
+		103EB03C2C45317A00EBB7E1 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB03B2C45317A00EBB7E1 /* UIViewController.swift */; };
+		103EB03E2C455D5300EBB7E1 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB03D2C455D5300EBB7E1 /* Battle.swift */; };
+		103EB0402C4560A800EBB7E1 /* WavesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB03F2C4560A800EBB7E1 /* WavesView.swift */; };
+		103EB0432C4560D400EBB7E1 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0422C4560D400EBB7E1 /* WaveView.swift */; };
 		10491B4E2C18F6E30077BDFA /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B4D2C18F6E30077BDFA /* Mudmouth */; };
 		10491B522C18F6F40077BDFA /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B512C18F6F40077BDFA /* Raccoon */; };
 		105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60452C19B6090038DFB5 /* ThunderConfig.swift */; };
@@ -184,6 +199,21 @@
 		103EB01F2C44971700EBB7E1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		103EB0212C44A85400EBB7E1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		103EB0232C44A92100EBB7E1 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		103EB0252C44AEA100EBB7E1 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		103EB0272C44BA6700EBB7E1 /* CoopWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoopWork.swift; sourceTree = "<group>"; };
+		103EB0292C44BAFD00EBB7E1 /* CoopWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoopWorkView.swift; sourceTree = "<group>"; };
+		103EB02B2C44BBF300EBB7E1 /* Stages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stages.swift; sourceTree = "<group>"; };
+		103EB02D2C44BC3C00EBB7E1 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		103EB02F2C452C9900EBB7E1 /* Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management.swift; sourceTree = "<group>"; };
+		103EB0312C452CD500EBB7E1 /* FilterPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPickView.swift; sourceTree = "<group>"; };
+		103EB0332C452E3900EBB7E1 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		103EB0352C452E6000EBB7E1 /* Restore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restore.swift; sourceTree = "<group>"; };
+		103EB0372C452EC200EBB7E1 /* RealmSigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSigner.swift; sourceTree = "<group>"; };
+		103EB0392C452F3800EBB7E1 /* SignedRealmCoopResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedRealmCoopResult.swift; sourceTree = "<group>"; };
+		103EB03B2C45317A00EBB7E1 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		103EB03D2C455D5300EBB7E1 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		103EB03F2C4560A800EBB7E1 /* WavesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesView.swift; sourceTree = "<group>"; };
+		103EB0422C4560D400EBB7E1 /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		10491B4C2C18F6790077BDFA /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
 		105B60452C19B6090038DFB5 /* ThunderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderConfig.swift; sourceTree = "<group>"; };
 		105B60492C1B565D0038DFB5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -344,6 +374,12 @@
 				103EB0192C448F5800EBB7E1 /* License.swift */,
 				103EB01B2C448FB800EBB7E1 /* History.swift */,
 				103EB01D2C4496AE00EBB7E1 /* Settings.swift */,
+				103EB0272C44BA6700EBB7E1 /* CoopWork.swift */,
+				103EB02B2C44BBF300EBB7E1 /* Stages.swift */,
+				103EB02F2C452C9900EBB7E1 /* Management.swift */,
+				103EB0332C452E3900EBB7E1 /* Backup.swift */,
+				103EB0352C452E6000EBB7E1 /* Restore.swift */,
+				103EB03D2C455D5300EBB7E1 /* Battle.swift */,
 			);
 			path = Menus;
 			sourceTree = "<group>";
@@ -356,6 +392,15 @@
 			path = Shape;
 			sourceTree = "<group>";
 		};
+		103EB0412C4560CA00EBB7E1 /* Waves */ = {
+			isa = PBXGroup;
+			children = (
+				103EB03F2C4560A800EBB7E1 /* WavesView.swift */,
+				103EB0422C4560D400EBB7E1 /* WaveView.swift */,
+			);
+			path = Waves;
+			sourceTree = "<group>";
+		};
 		105B605A2C1CA7980038DFB5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +411,8 @@
 				103EB0142C448EB500EBB7E1 /* ButtonStyle.swift */,
 				103EB0212C44A85400EBB7E1 /* View.swift */,
 				103EB0232C44A92100EBB7E1 /* UIApplication.swift */,
+				103EB0252C44AEA100EBB7E1 /* UIDevice.swift */,
+				103EB03B2C45317A00EBB7E1 /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,8 +439,9 @@
 		1070F5D82C0C635D00654AAF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				105B605F2C1CC22C0038DFB5 /* JSON */,
 				1070F5F12C0C6AE000654AAF /* Realm */,
+				105B605F2C1CC22C0038DFB5 /* JSON */,
+				103EB0372C452EC200EBB7E1 /* RealmSigner.swift */,
 				1070F5D92C0C636E00654AAF /* RealmMigration.swift */,
 				105B60492C1B565D0038DFB5 /* RealmManager.swift */,
 				1070F5E52C0C67D400654AAF /* SplitNavigationViewStyle.swift */,
@@ -410,11 +458,15 @@
 		1070F5E12C0C678300654AAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				103EB0412C4560CA00EBB7E1 /* Waves */,
 				10297DB82C187C1F0077CB49 /* Mudmouth */,
 				1070F5E92C0C67EF00654AAF /* Common */,
 				1070F5E82C0C67E600654AAF /* Schedules */,
 				1070F5E72C0C67DB00654AAF /* Results */,
 				103EB01F2C44971700EBB7E1 /* SettingsView.swift */,
+				103EB0292C44BAFD00EBB7E1 /* CoopWorkView.swift */,
+				103EB02D2C44BC3C00EBB7E1 /* StageView.swift */,
+				103EB0312C452CD500EBB7E1 /* FilterPickView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,6 +518,7 @@
 				103EB0092C42EE4300EBB7E1 /* RealmCollection.swift */,
 				103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */,
 				103EB0072C42EDD800EBB7E1 /* RealmCollection+Player.swift */,
+				103EB0392C452F3800EBB7E1 /* SignedRealmCoopResult.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -760,19 +813,23 @@
 				103EAFF82C4294E100EBB7E1 /* ScheduleWave.swift in Sources */,
 				103EB01A2C448F5800EBB7E1 /* License.swift in Sources */,
 				105B60522C1B7AA30038DFB5 /* RealmPreview.swift in Sources */,
+				103EB03E2C455D5300EBB7E1 /* Battle.swift in Sources */,
 				1070F5FF2C0C6AFD00654AAF /* RealmCoopEnemy.swift in Sources */,
 				105B60542C1B7EF70038DFB5 /* WebImage.swift in Sources */,
+				103EB0322C452CD500EBB7E1 /* FilterPickView.swift in Sources */,
 				103C502A2C0C70D3008085C8 /* PersistableEnum.swift in Sources */,
 				10297DBA2C187C4F0077CB49 /* MudmouthView.swift in Sources */,
 				105B605E2C1CBC9A0038DFB5 /* ResultView.swift in Sources */,
 				1070F5DA2C0C636E00654AAF /* RealmMigration.swift in Sources */,
 				103EB01C2C448FB800EBB7E1 /* History.swift in Sources */,
+				103EB03C2C45317A00EBB7E1 /* UIViewController.swift in Sources */,
 				108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */,
 				108F48F82C1CFF4700A6FD11 /* ResultHeaderWeapon.swift in Sources */,
 				1070F5FA2C0C6AFD00654AAF /* RealmCoopRecord.swift in Sources */,
 				108F49122C1F294700A6FD11 /* CarouselView.swift in Sources */,
 				103EB0182C448EE100EBB7E1 /* SPCircle.swift in Sources */,
 				105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */,
+				103EB02A2C44BAFD00EBB7E1 /* CoopWorkView.swift in Sources */,
 				103EAFF62C4294D900EBB7E1 /* ScheduleWaveView.swift in Sources */,
 				103EAFF42C4294B200EBB7E1 /* ScheduleStatus.swift in Sources */,
 				103EB0002C4295D500EBB7E1 /* List+Collection.swift in Sources */,
@@ -786,12 +843,15 @@
 				103EB0202C44971700EBB7E1 /* SettingsView.swift in Sources */,
 				1070F5FE2C0C6AFD00654AAF /* RealmCoopPlayer.swift in Sources */,
 				108F48FA2C1D041000A6FD11 /* ResultStatus.swift in Sources */,
+				103EB0382C452EC200EBB7E1 /* RealmSigner.swift in Sources */,
 				105B604C2C1B79190038DFB5 /* Realm+.swift in Sources */,
 				105B604E2C1B79DE0038DFB5 /* ScheduleView.swift in Sources */,
 				1070F5ED2C0C680500654AAF /* ResultsView.swift in Sources */,
 				1070F5EF2C0C680D00654AAF /* SchedulesView.swift in Sources */,
 				103EAFF22C42940900EBB7E1 /* ScheduleHeader.swift in Sources */,
 				108F48EF2C1CC75F00A6FD11 /* ResultDetailView.swift in Sources */,
+				103EB02C2C44BBF300EBB7E1 /* Stages.swift in Sources */,
+				103EB0262C44AEA100EBB7E1 /* UIDevice.swift in Sources */,
 				103EAFFE2C4295A000EBB7E1 /* RealmCollection+Result.swift in Sources */,
 				108F48FC2C1D0FD600A6FD11 /* ResultJob.swift in Sources */,
 				108F48FE2C1D185200A6FD11 /* ResultWave.swift in Sources */,
@@ -803,16 +863,23 @@
 				109F9AC02C0C5DCD00DD0281 /* ContentView.swift in Sources */,
 				103EAFFC2C4294FA00EBB7E1 /* SchedulePointCard.swift in Sources */,
 				108F490A2C1DEE8B00A6FD11 /* RemoveAll.swift in Sources */,
+				103EB02E2C44BC3C00EBB7E1 /* StageView.swift in Sources */,
 				108F48F62C1CFE4100A6FD11 /* ResultHeader.swift in Sources */,
+				103EB0362C452E6000EBB7E1 /* Restore.swift in Sources */,
 				105B605C2C1CA7BB0038DFB5 /* RealmSwift+List.swift in Sources */,
+				103EB03A2C452F3800EBB7E1 /* SignedRealmCoopResult.swift in Sources */,
 				105B60502C1B7A800038DFB5 /* NavigationLinker.swift in Sources */,
 				108F490E2C1E116800A6FD11 /* Encodable.swift in Sources */,
 				108F49102C1F15C100A6FD11 /* EnvironmentKey.swift in Sources */,
 				103EB00C2C42EEA100EBB7E1 /* Statics.swift in Sources */,
+				103EB0342C452E3900EBB7E1 /* Backup.swift in Sources */,
+				103EB0402C4560A800EBB7E1 /* WavesView.swift in Sources */,
+				103EB0302C452C9900EBB7E1 /* Management.swift in Sources */,
 				108F49002C1D871900A6FD11 /* ResultPlayer.swift in Sources */,
 				103EB0102C44463E00EBB7E1 /* WeaponListView.swift in Sources */,
 				105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */,
 				103EB00A2C42EE4300EBB7E1 /* RealmCollection.swift in Sources */,
+				103EB0282C44BA6700EBB7E1 /* CoopWork.swift in Sources */,
 				10297DBF2C187D370077CB49 /* BackgroundWave.swift in Sources */,
 				109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */,
 				1070F5FC2C0C6AFD00654AAF /* RealmCoopSchedule.swift in Sources */,
@@ -820,6 +887,7 @@
 				105B604A2C1B565D0038DFB5 /* RealmManager.swift in Sources */,
 				103EB01E2C4496AE00EBB7E1 /* Settings.swift in Sources */,
 				1070F5FD2C0C6AFD00654AAF /* RealmCoopWave.swift in Sources */,
+				103EB0432C4560D400EBB7E1 /* WaveView.swift in Sources */,
 				108F48F12C1CC81600A6FD11 /* Ikura.swift in Sources */,
 				103EAFFA2C4294F100EBB7E1 /* ScheduleScale.swift in Sources */,
 				108F49022C1D8C6A00A6FD11 /* ResultDefeated.swift in Sources */,
@@ -870,7 +938,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
@@ -897,7 +965,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
@@ -1046,7 +1114,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				ENABLE_PREVIEWS = YES;
@@ -1086,7 +1154,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ThunderApp/ThunderApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"ThunderApp/Preview Content\"";
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				ENABLE_PREVIEWS = YES;
@@ -1124,7 +1192,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -1144,7 +1212,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -1163,7 +1231,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1181,7 +1249,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = D9HU6JZF2Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;

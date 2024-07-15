@@ -12,7 +12,7 @@ import Firebolt
 import Thunder
 
 struct ResultsView: View {
-    @Environment(\.realm) private var realm: RealmManager
+    @Environment(\.manager) private var manager: RealmManager
     @ObservedResults(RealmCoopSchedule.self) var schedules
 
     var body: some View {
@@ -40,7 +40,7 @@ struct ResultsView: View {
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(Text(LocalizedType.CoopHistoryHistory))
         .refreshable(action: {
-            try await realm.refresh()
+            try await manager.refresh()
         })
     }
 }

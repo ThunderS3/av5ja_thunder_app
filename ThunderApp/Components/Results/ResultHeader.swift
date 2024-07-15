@@ -12,7 +12,7 @@ import RealmSwift
 
 struct ResultHeader: View {
     @Environment(\.visible) var visible
-    @State private var scale: CGFloat = 30
+    @State private var scale: CGFloat = 1.0
     let result: RealmCoopResult
 
     var body: some View {

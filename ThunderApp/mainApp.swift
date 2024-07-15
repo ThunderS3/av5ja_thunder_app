@@ -21,7 +21,7 @@ struct mainApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.realm, manager)
+                .environment(\.realm, RealmMigration.realm)
                 .environment(\.realmConfiguration, RealmMigration.configuration)
                 .environmentObject(config)
                 .overrideUserInterfaceStyle(config.preferredColorScheme, scenePhase)

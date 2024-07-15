@@ -23,7 +23,6 @@ extension Realm {
                 results[key] = result.value
             }
         )
-        print(object)
         return create(T.self, value: object, update: update)
     }
 }

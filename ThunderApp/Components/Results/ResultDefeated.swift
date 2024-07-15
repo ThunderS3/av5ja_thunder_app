@@ -10,7 +10,7 @@ import SwiftUI
 import Thunder
 
 struct ResultDefeated: View {
-    @State private var scale: CGFloat = .zero
+    @State private var scale: CGFloat = 1.0
     let result: RealmCoopResult
     
     var body: some View {

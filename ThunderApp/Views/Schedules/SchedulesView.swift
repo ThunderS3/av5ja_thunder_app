@@ -11,7 +11,7 @@ import RealmSwift
 import Firebolt
 
 struct SchedulesView: View {
-    @Environment(\.realm) private var realm: RealmManager
+    @Environment(\.manager) private var manager: RealmManager
     @ObservedResults(RealmCoopSchedule.self) var schedules
 
     var body: some View {
@@ -29,7 +29,7 @@ struct SchedulesView: View {
         .listStyle(.plain)
         .navigationBarTitleDisplayMode(.inline)
         .refreshable(action: {
-            try await realm.refresh()
+            try await manager.refresh()
         })
     }
 }

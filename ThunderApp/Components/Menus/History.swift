@@ -14,8 +14,7 @@ struct History: View {
     
     var body: some View {
         NavigationLink(destination: {
-            EmptyView()
-            //            WavesView()
+            WavesView()
         }, label: {
             Text(LocalizedType.CoopHistoryHistory)
                 .font(.custom(.Splatfont2, size: 12))

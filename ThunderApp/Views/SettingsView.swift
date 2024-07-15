@@ -26,6 +26,16 @@ struct SettingsView: View {
                 })
             Section(
                 content: {
+                    AppVersion()
+                    BuildNumber()
+                    SystemVersion()
+                },
+                header: {
+                    Text(LocalizedType.CommonApplication)
+                        .font(.custom(.Splatfont1, size: 16))
+                })
+            Section(
+                content: {
                     SignIn()
                     RemoveAll()
                 },
@@ -65,6 +75,36 @@ struct SettingsView: View {
             })
     }
     
+    @ViewBuilder
+    private func AppVersion() -> some View {
+        HStack(content: {
+            Text(LocalizedType.CommonAppVersion)
+            Spacer()
+            Text(UIDevice.current.version)
+                .foregroundColor(.secondary)
+        })
+    }
+
+    @ViewBuilder
+    private func BuildNumber() -> some View {
+        HStack(content: {
+            Text(LocalizedType.CommonBuildNumber)
+            Spacer()
+            Text(UIDevice.current.buildVersion, format: .number)
+                .foregroundColor(.secondary)
+        })
+    }
+
+    @ViewBuilder
+    private func SystemVersion() -> some View {
+        HStack(content: {
+            Text(LocalizedType.CommoniOsVersion)
+            Spacer()
+            Text(UIDevice.current.systemVersion)
+                .foregroundColor(.secondary)
+        })
+    }
+    
     private struct SignIn: View {
         @EnvironmentObject private var config: ThunderConfig
         @State private var isPresented = false
@@ -102,7 +142,7 @@ struct SettingsView: View {
     
     private struct RemoveAll: View {
         @EnvironmentObject private var config: ThunderConfig
-        @Environment(\.realm) var realm
+        @Environment(\.manager) private var manager: RealmManager
         @State private var isPresented = false
         
         var body: some View {
@@ -122,7 +162,7 @@ struct SettingsView: View {
                     Button(
                         role: .destructive,
                         action: {
-                            realm.removeAll()
+                            manager.removeAll()
                         },
                         label: {
                             Text(LocalizedType.CommonDecide)
