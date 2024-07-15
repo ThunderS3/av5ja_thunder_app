@@ -62,14 +62,14 @@ struct ResultStatus: View {
         })
         .padding(.all, 4)
         .frame(height: 48)
-        .onAppear(perform: {
-            withAnimation(.easeIn(duration: 0.5)) {
-                scale = 1.0
-            }
-        })
-        .onDisappear(perform: {
-            scale = .zero
-        })
+//        .onAppear(perform: {
+//            withAnimation(.easeIn(duration: 0.5)) {
+//                scale = 1.0
+//            }
+//        })
+//        .onDisappear(perform: {
+//            scale = .zero
+//        })
     }
 }
 

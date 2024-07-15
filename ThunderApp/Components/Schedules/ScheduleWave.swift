@@ -21,10 +21,10 @@ struct ScheduleWave: View {
         GroupBox(content: {
             VStack(spacing: 0, content: {
                 Text(LocalizedType.CoopHistoryEventClearRatio)
-                    .font(.custom(.Splatfont2, size: 14))
+                    .font(.custom(.Splatfont2, size: 12.5))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text(schedule.results.clearRatio, format: .number(3))
-                    .font(.custom(.Splatfont2, size: 16))
+                Text(schedule.results.clearRatio, format: .percent(3))
+                    .font(.custom(.Splatfont2, size: 14))
                     .foregroundColor(SPColor.SP3.SPOrange)
                     .frame(maxWidth: .infinity, alignment: .trailing)
             })

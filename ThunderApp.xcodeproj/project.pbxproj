@@ -27,6 +27,20 @@
 		103EB0002C4295D500EBB7E1 /* List+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */; };
 		103EB0032C42AF9300EBB7E1 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 103EB0022C42AF9300EBB7E1 /* SDWebImageSVGCoder */; };
 		103EB0062C42AFF700EBB7E1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 103EB0052C42AFF700EBB7E1 /* SDWebImage */; };
+		103EB0082C42EDD800EBB7E1 /* RealmCollection+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0072C42EDD800EBB7E1 /* RealmCollection+Player.swift */; };
+		103EB00A2C42EE4300EBB7E1 /* RealmCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0092C42EE4300EBB7E1 /* RealmCollection.swift */; };
+		103EB00C2C42EEA100EBB7E1 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB00B2C42EEA100EBB7E1 /* Statics.swift */; };
+		103EB00E2C430B3200EBB7E1 /* GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB00D2C430B3200EBB7E1 /* GroupBox.swift */; };
+		103EB0102C44463E00EBB7E1 /* WeaponListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB00F2C44463E00EBB7E1 /* WeaponListView.swift */; };
+		103EB0132C448E5C00EBB7E1 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0122C448E5C00EBB7E1 /* Review.swift */; };
+		103EB0152C448EB500EBB7E1 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0142C448EB500EBB7E1 /* ButtonStyle.swift */; };
+		103EB0182C448EE100EBB7E1 /* SPCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0172C448EE100EBB7E1 /* SPCircle.swift */; };
+		103EB01A2C448F5800EBB7E1 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0192C448F5800EBB7E1 /* License.swift */; };
+		103EB01C2C448FB800EBB7E1 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB01B2C448FB800EBB7E1 /* History.swift */; };
+		103EB01E2C4496AE00EBB7E1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB01D2C4496AE00EBB7E1 /* Settings.swift */; };
+		103EB0202C44971700EBB7E1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB01F2C44971700EBB7E1 /* SettingsView.swift */; };
+		103EB0222C44A85400EBB7E1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0212C44A85400EBB7E1 /* View.swift */; };
+		103EB0242C44A92100EBB7E1 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103EB0232C44A92100EBB7E1 /* UIApplication.swift */; };
 		10491B4E2C18F6E30077BDFA /* Mudmouth in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B4D2C18F6E30077BDFA /* Mudmouth */; };
 		10491B522C18F6F40077BDFA /* Raccoon in Frameworks */ = {isa = PBXBuildFile; productRef = 10491B512C18F6F40077BDFA /* Raccoon */; };
 		105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B60452C19B6090038DFB5 /* ThunderConfig.swift */; };
@@ -156,6 +170,20 @@
 		103EAFFB2C4294FA00EBB7E1 /* SchedulePointCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePointCard.swift; sourceTree = "<group>"; };
 		103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Result.swift"; sourceTree = "<group>"; };
 		103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Collection.swift"; sourceTree = "<group>"; };
+		103EB0072C42EDD800EBB7E1 /* RealmCollection+Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Player.swift"; sourceTree = "<group>"; };
+		103EB0092C42EE4300EBB7E1 /* RealmCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCollection.swift; sourceTree = "<group>"; };
+		103EB00B2C42EEA100EBB7E1 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
+		103EB00D2C430B3200EBB7E1 /* GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBox.swift; sourceTree = "<group>"; };
+		103EB00F2C44463E00EBB7E1 /* WeaponListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponListView.swift; sourceTree = "<group>"; };
+		103EB0122C448E5C00EBB7E1 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		103EB0142C448EB500EBB7E1 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		103EB0172C448EE100EBB7E1 /* SPCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCircle.swift; sourceTree = "<group>"; };
+		103EB0192C448F5800EBB7E1 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
+		103EB01B2C448FB800EBB7E1 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		103EB01D2C4496AE00EBB7E1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		103EB01F2C44971700EBB7E1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		103EB0212C44A85400EBB7E1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		103EB0232C44A92100EBB7E1 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		10491B4C2C18F6790077BDFA /* ThunderSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ThunderSDK; path = ../ThunderSDK; sourceTree = "<group>"; };
 		105B60452C19B6090038DFB5 /* ThunderConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderConfig.swift; sourceTree = "<group>"; };
 		105B60492C1B565D0038DFB5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -267,6 +295,8 @@
 		10297DBD2C187D280077CB49 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				103EB0162C448ED800EBB7E1 /* Shape */,
+				103EB0112C448E5300EBB7E1 /* Menus */,
 				103EAFF02C4293FD00EBB7E1 /* Schedules */,
 				108F49082C1DEE7E00A6FD11 /* MyPage */,
 				108F48F42C1CFDE400A6FD11 /* Results */,
@@ -307,12 +337,35 @@
 			path = Schedules;
 			sourceTree = "<group>";
 		};
+		103EB0112C448E5300EBB7E1 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				103EB0122C448E5C00EBB7E1 /* Review.swift */,
+				103EB0192C448F5800EBB7E1 /* License.swift */,
+				103EB01B2C448FB800EBB7E1 /* History.swift */,
+				103EB01D2C4496AE00EBB7E1 /* Settings.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		103EB0162C448ED800EBB7E1 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				103EB0172C448EE100EBB7E1 /* SPCircle.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
 		105B605A2C1CA7980038DFB5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				105B605B2C1CA7BB0038DFB5 /* RealmSwift+List.swift */,
 				108F48F22C1CEEF100A6FD11 /* Text.swift */,
 				107F63F02C1F87B900DF6328 /* FormatStyle.swift */,
+				103EB00D2C430B3200EBB7E1 /* GroupBox.swift */,
+				103EB0142C448EB500EBB7E1 /* ButtonStyle.swift */,
+				103EB0212C44A85400EBB7E1 /* View.swift */,
+				103EB0232C44A92100EBB7E1 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +402,7 @@
 				108F490D2C1E116800A6FD11 /* Encodable.swift */,
 				108F490F2C1F15C100A6FD11 /* EnvironmentKey.swift */,
 				103EAFFF2C4295D500EBB7E1 /* List+Collection.swift */,
+				103EB00B2C42EEA100EBB7E1 /* Statics.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -360,6 +414,7 @@
 				1070F5E92C0C67EF00654AAF /* Common */,
 				1070F5E82C0C67E600654AAF /* Schedules */,
 				1070F5E72C0C67DB00654AAF /* Results */,
+				103EB01F2C44971700EBB7E1 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +437,7 @@
 				105B604D2C1B79DE0038DFB5 /* ScheduleView.swift */,
 				103EAFEE2C4293A300EBB7E1 /* ScheduleDetailView.swift */,
 				103EAFF52C4294D900EBB7E1 /* ScheduleWaveView.swift */,
+				103EB00F2C44463E00EBB7E1 /* WeaponListView.swift */,
 			);
 			path = Schedules;
 			sourceTree = "<group>";
@@ -407,7 +463,9 @@
 				1070F5F72C0C6AFC00654AAF /* RealmCoopWave.swift */,
 				105B604B2C1B79190038DFB5 /* Realm+.swift */,
 				105B60512C1B7AA30038DFB5 /* RealmPreview.swift */,
+				103EB0092C42EE4300EBB7E1 /* RealmCollection.swift */,
 				103EAFFD2C4295A000EBB7E1 /* RealmCollection+Result.swift */,
+				103EB0072C42EDD800EBB7E1 /* RealmCollection+Player.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -700,6 +758,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103EAFF82C4294E100EBB7E1 /* ScheduleWave.swift in Sources */,
+				103EB01A2C448F5800EBB7E1 /* License.swift in Sources */,
 				105B60522C1B7AA30038DFB5 /* RealmPreview.swift in Sources */,
 				1070F5FF2C0C6AFD00654AAF /* RealmCoopEnemy.swift in Sources */,
 				105B60542C1B7EF70038DFB5 /* WebImage.swift in Sources */,
@@ -707,17 +766,24 @@
 				10297DBA2C187C4F0077CB49 /* MudmouthView.swift in Sources */,
 				105B605E2C1CBC9A0038DFB5 /* ResultView.swift in Sources */,
 				1070F5DA2C0C636E00654AAF /* RealmMigration.swift in Sources */,
+				103EB01C2C448FB800EBB7E1 /* History.swift in Sources */,
 				108F490C2C1DEF1F00A6FD11 /* SignIn.swift in Sources */,
 				108F48F82C1CFF4700A6FD11 /* ResultHeaderWeapon.swift in Sources */,
 				1070F5FA2C0C6AFD00654AAF /* RealmCoopRecord.swift in Sources */,
 				108F49122C1F294700A6FD11 /* CarouselView.swift in Sources */,
+				103EB0182C448EE100EBB7E1 /* SPCircle.swift in Sources */,
 				105B60592C1C7D030038DFB5 /* RealmCoopSchedule+.swift in Sources */,
 				103EAFF62C4294D900EBB7E1 /* ScheduleWaveView.swift in Sources */,
 				103EAFF42C4294B200EBB7E1 /* ScheduleStatus.swift in Sources */,
 				103EB0002C4295D500EBB7E1 /* List+Collection.swift in Sources */,
 				10297DC12C1889220077CB49 /* FloatingButtonStyle.swift in Sources */,
+				103EB0222C44A85400EBB7E1 /* View.swift in Sources */,
 				108F48F32C1CEEF100A6FD11 /* Text.swift in Sources */,
+				103EB0082C42EDD800EBB7E1 /* RealmCollection+Player.swift in Sources */,
 				1070F5FB2C0C6AFD00654AAF /* RealmCoopResult.swift in Sources */,
+				103EB00E2C430B3200EBB7E1 /* GroupBox.swift in Sources */,
+				103EB0132C448E5C00EBB7E1 /* Review.swift in Sources */,
+				103EB0202C44971700EBB7E1 /* SettingsView.swift in Sources */,
 				1070F5FE2C0C6AFD00654AAF /* RealmCoopPlayer.swift in Sources */,
 				108F48FA2C1D041000A6FD11 /* ResultStatus.swift in Sources */,
 				105B604C2C1B79190038DFB5 /* Realm+.swift in Sources */,
@@ -729,6 +795,7 @@
 				103EAFFE2C4295A000EBB7E1 /* RealmCollection+Result.swift in Sources */,
 				108F48FC2C1D0FD600A6FD11 /* ResultJob.swift in Sources */,
 				108F48FE2C1D185200A6FD11 /* ResultWave.swift in Sources */,
+				103EB0152C448EB500EBB7E1 /* ButtonStyle.swift in Sources */,
 				1070F5E62C0C67D400654AAF /* SplitNavigationViewStyle.swift in Sources */,
 				1070F5EB2C0C67FB00654AAF /* MyPageView.swift in Sources */,
 				103EAFEF2C4293A300EBB7E1 /* ScheduleDetailView.swift in Sources */,
@@ -741,12 +808,17 @@
 				105B60502C1B7A800038DFB5 /* NavigationLinker.swift in Sources */,
 				108F490E2C1E116800A6FD11 /* Encodable.swift in Sources */,
 				108F49102C1F15C100A6FD11 /* EnvironmentKey.swift in Sources */,
+				103EB00C2C42EEA100EBB7E1 /* Statics.swift in Sources */,
 				108F49002C1D871900A6FD11 /* ResultPlayer.swift in Sources */,
+				103EB0102C44463E00EBB7E1 /* WeaponListView.swift in Sources */,
 				105B60462C19B6090038DFB5 /* ThunderConfig.swift in Sources */,
+				103EB00A2C42EE4300EBB7E1 /* RealmCollection.swift in Sources */,
 				10297DBF2C187D370077CB49 /* BackgroundWave.swift in Sources */,
 				109F9ABE2C0C5DCD00DD0281 /* mainApp.swift in Sources */,
 				1070F5FC2C0C6AFD00654AAF /* RealmCoopSchedule.swift in Sources */,
+				103EB0242C44A92100EBB7E1 /* UIApplication.swift in Sources */,
 				105B604A2C1B565D0038DFB5 /* RealmManager.swift in Sources */,
+				103EB01E2C4496AE00EBB7E1 /* Settings.swift in Sources */,
 				1070F5FD2C0C6AFD00654AAF /* RealmCoopWave.swift in Sources */,
 				108F48F12C1CC81600A6FD11 /* Ikura.swift in Sources */,
 				103EAFFA2C4294F100EBB7E1 /* ScheduleScale.swift in Sources */,

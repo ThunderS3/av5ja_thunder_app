@@ -28,6 +28,8 @@ struct SPImage: View {
 
     var body: WebImage<Image> {
         WebImage(url: assetURL)
+            .onSuccess(perform: { image, data, type in
+            })
             .resizable()
     }
 }

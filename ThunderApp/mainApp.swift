@@ -24,10 +24,11 @@ struct mainApp: App {
                 .environment(\.realm, manager)
                 .environment(\.realmConfiguration, RealmMigration.configuration)
                 .environmentObject(config)
+                .overrideUserInterfaceStyle(config.preferredColorScheme, scenePhase)
+                .addScenePhaseObserver(scenePhase)
                 .fullScreenCover(isPresented: config.$isFirstLaunch, content: {
                     MudmouthView()
                 })
-                .addScenePhaseObserver(scenePhase)
         }
     }
 

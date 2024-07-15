@@ -80,14 +80,14 @@ struct ResultHeader: View {
                     .padding(.horizontal, 4)
                     .padding(.top, 4)
             })
-            .onAppear(perform: {
-                withAnimation(.spring(duration: 0.5, bounce: 0.25), {
-                    scale = 1.0
-                })
-            })
-            .onDisappear(perform: {
-                scale = 30
-            })
+//            .onAppear(perform: {
+//                withAnimation(.spring(duration: 0.5, bounce: 0.25), {
+//                    scale = 1.0
+//                })
+//            })
+//            .onDisappear(perform: {
+//                scale = 30
+//            })
     }
 }
 

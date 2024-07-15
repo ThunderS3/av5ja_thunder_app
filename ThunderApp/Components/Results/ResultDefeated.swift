@@ -26,14 +26,14 @@ struct ResultDefeated: View {
                 }
             })
         })
-        .onAppear(perform: {
-            withAnimation(.easeIn(duration: 0.8), {
-                scale = 1.0
-            })
-        })
-        .onDisappear(perform: {
-            scale = .zero
-        })
+//        .onAppear(perform: {
+//            withAnimation(.easeIn(duration: 0.8), {
+//                scale = 1.0
+//            })
+//        })
+//        .onDisappear(perform: {
+//            scale = .zero
+//        })
     }
 
     @ViewBuilder
@@ -52,7 +52,6 @@ struct ResultDefeated: View {
                     Rectangle()
                         .fill(SPColor.SP3.SPOrange)
                         .frame(width: geometry.size.width * bias * scale, height: 14)
-                    //                                .animation(.easeIn(duration: 0.8), value: scale)
                 })
                 .overlay(alignment: .center, content: {
                     Text("\(Int(bossKillCount))(\(count))/\(Int(bossCount))")

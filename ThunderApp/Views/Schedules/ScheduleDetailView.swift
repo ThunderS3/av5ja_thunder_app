@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Thunder
 
 struct ScheduleDetailView: View {
     let schedule: RealmCoopSchedule
@@ -15,22 +16,26 @@ struct ScheduleDetailView: View {
         ScrollView(content: {
             _body
         })
+        .navigationTitle(Text(LocalizedType.StageScheduleTitle))
     }
     
     private var _body: some View {
-        GridRow(alignment: .top, content: {
-            ScheduleHeader()
+        Grid(alignment: .top, content: {
+            ScheduleHeader(schedule: schedule)
             Divider()
                 .gridCellUnsizedAxes(.horizontal)
             GridRow(content: {
-                ScheduleStatus(schedule: schedule)
-                NavigationLink(destination: {
-                    ScheduleWaveView(schedule: schedule)
-                }, label: {
-                    ScheduleWave(schedule: schedule)
+                VStack(content: {
+                    ScheduleStatus(schedule: schedule)
+                    NavigationLink(destination: {
+                        ScheduleWaveView(schedule: schedule)
+                    }, label: {
+                        ScheduleWave(schedule: schedule)
+                    })
+                    .buttonStyle(.plain)
+                    ScheduleScale(schedule: schedule)
                 })
-                .buttonStyle(.plain)
-                ScheduleScale(schedule: schedule)
+                SchedulePointCard(schedule: schedule)
             })
         })
     }

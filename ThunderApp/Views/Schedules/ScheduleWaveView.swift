@@ -18,15 +18,16 @@ struct ScheduleWaveView: View {
     }
     
     var body: some View {
-        _body
+        ScrollView(content: {
+            _body
+        })
+        .navigationTitle(Text(LocalizedType.CoopHistoryWave))
     }
     
     @ViewBuilder
     private var _body: some View {
-        ScrollView(content: {
-            ForEach(CoopEvent.Id.allCases, content: { eventId in
-                EventResult(eventId)
-            })
+        ForEach(CoopEvent.Id.allCases, content: { eventId in
+            EventResult(eventId)
         })
     }
     

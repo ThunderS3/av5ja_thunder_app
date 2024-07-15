@@ -19,28 +19,21 @@ struct ScheduleStatus: View {
     @ViewBuilder
     private var _ScheduleStatus: some View {
         GroupBox(content: {
-            VStack(spacing: nil, content: {
+            VStack(content: {
                 VStack(spacing: 4,content: {
                     Text(LocalizedType.CoopHistoryGradePoint)
                         .font(.custom(.Splatfont2, size: 12.5))
                         .frame(maxWidth: .infinity, alignment: .leading)
                     HStack(content: {
-                        if let maxGradeId = schedule.results.maxGradeId,
-                           let maxGradePoint = schedule.results.maxGradePoint
-                        {
-                            Text(maxGradeId)
-                                .lineLimit(1)
-                            Text(maxGradePoint, format: .number)
-                        } else {
-                            Text("-")
-                            Text("-")
-                        }
+                        Text(schedule.results.maxGradeId)
+                            .lineLimit(1)
+                        Text(schedule.results.maxGradePoint, format: .number())
                     })
                     .font(.custom(.Splatfont2, size: 14))
                     .foregroundColor(SPColor.SP3.SPOrange)
                     .frame(maxWidth: .infinity, alignment: .trailing)
                 })
-                .padding(.bottom, 1)
+                .padding(.bottom, 4)
                 VStack(spacing: 4, content: {
                     Text(LocalizedType.CoopHistoryAverageClearWaves)
                         .font(.custom(.Splatfont2, size: 12.5))

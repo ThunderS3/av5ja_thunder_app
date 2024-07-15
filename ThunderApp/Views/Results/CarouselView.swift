@@ -10,10 +10,6 @@ import SwiftUI
 import RealmSwift
 
 struct CarouselView: View {
-//    let results: [RealmCoopResult] = [
-//        .preview(),
-//        .preview()
-//    ]
     @ObservedResults(RealmCoopResult.self, sortDescriptor: .init(keyPath: "playTime", ascending: false)) var results
     @State private var isPresented: Bool = true
     let result: RealmCoopResult
