@@ -18,6 +18,7 @@ struct SettingsView: View {
                 UseSystemScheme()
                 UseDarkTheme()
                 UseGamingMode()
+                FetchOnLaunch()
                 ResultDisplayMode()
             }, header: {
                 Text(LocalizedType.CommonAppearances)
@@ -71,6 +72,15 @@ struct SettingsView: View {
             })
     }
 
+    @ViewBuilder
+    private func FetchOnLaunch() -> some View {
+        Toggle(
+            isOn: config.$fetchOnLaunch,
+            label: {
+                Text(LocalizedType.CommonDownload)
+            })
+    }
+    
     @ViewBuilder
     private func AppVersion() -> some View {
         HStack(content: {

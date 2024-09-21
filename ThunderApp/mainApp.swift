@@ -54,7 +54,7 @@ struct mainApp: App {
             UNUserNotificationCenter.current().delegate = self
             SDImageCodersManager.shared.addCoder(SDImageSVGCoder.shared)
             
-            if config.isFirstLaunch {
+            if config.fetchOnLaunch {
                 Raccoon.configure()
             }
             Raccoon.registerFontDescriptors()

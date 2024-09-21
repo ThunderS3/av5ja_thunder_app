@@ -15,17 +15,17 @@ extension RealmCoopSchedule {
     var isRandom: Bool {
         weaponList.contains(.RandomGold) || weaponList.contains(.RandomGreen)
     }
-
+    
     /// プレイヤー一覧
     func players(_ isMyself: Bool) -> RealmSwift.List<RealmCoopPlayer> {
         isMyself ? .init(contentsOf: results.map(\.player)) : .init(contentsOf: results.flatMap(\.players))
     }
-   
+    
     /// ビッグランかどうか
     var isBigRun: Bool {
         stageId.isBigRun
     }
-   
+    
     /// クマサンポイントカードの情報
     var pointCard: PointCard {
         .init(
@@ -79,7 +79,7 @@ extension RealmCoopSchedule {
     var weaponData: [WeaponList] {
         let results: [WeaponInfoMain.Id] = results.flatMap(\.player.weaponList)
         let targetList: [WeaponInfoMain.Id] =
-        isRandom ? WeaponInfoMain.Id.regular + .init(rareWeapons) : .init(weaponList)
+        isRandom ? weaponList.contains(WeaponInfoMain.Id.RandomGold) ? WeaponInfoMain.Id.bear : WeaponInfoMain.Id.regular + .init(rareWeapons) : .init(weaponList)
         return targetList.map({ weaponId in
                 .init(
                     id: weaponId,

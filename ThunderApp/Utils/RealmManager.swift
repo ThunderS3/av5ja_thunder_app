@@ -17,15 +17,6 @@ final class RealmManager: Firebolt, ObservableObject {
     private let realm: Realm = RealmMigration.realm
     
     @discardableResult
-    /// ブキ画像取得
-    /// - Returns: <#description#>
-    override func getWeaponRecord() async throws -> WeaponRecordQuery.Response {
-        let response = try await super.getWeaponRecord()
-        try await Raccoon.fetch(urls: response.assetURLs)
-        return response
-    }
-
-    @discardableResult
     /// <#Description#>
     /// - Returns: <#description#>
     override func getCoopRecord() async throws -> CoopRecordQuery.Response {
@@ -38,16 +29,15 @@ final class RealmManager: Firebolt, ObservableObject {
                 realm.update(RealmCoopRecord.self, value: stage, update: .modified)
             })
         })
-        try await Raccoon.fetch(urls: response.assetURLs)
         return response
     }
 
     @MainActor
     func refresh() async throws {
         try await getCoopRecord()
-        try await getWeaponRecord()
         let lastPlayedTime: Date = realm.objects(RealmCoopResult.self).max(ofProperty: "playTime") ?? .init(timeIntervalSince1970: 0)
         let schedules: [CoopScheduleQuery.Schedule] = try await getCoopSchedules().schedules
+        // スケジュール書き込み
         inWriteTransaction(transaction: { [self] in
             schedules.forEach({ schedule in
                 realm.update(RealmCoopSchedule.self, value: schedule, update: .modified)
