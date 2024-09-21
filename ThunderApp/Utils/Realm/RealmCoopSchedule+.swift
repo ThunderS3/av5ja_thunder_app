@@ -33,7 +33,7 @@ extension RealmCoopSchedule {
             goldenIkuraNum: players(true).sumValue(ofProperty: "goldenIkuraNum"),
             ikuraNum: players(true).sumValue(ofProperty: "ikuraNum"),
             bossKillCount: players(true).sumValue(ofProperty: "bossKillCountsTotal"),
-            kingKillCount: results.sumValue(ofProperty: "goldenIkuraNum"),
+            kingKillCount: results.filter("isBossDefeated=true").count,
             helpCount: players(true).sumValue(ofProperty: "helpCount"),
             deathCount: players(true).sumValue(ofProperty: "deadCount"),
             kumaPoint: results.sumValue(ofProperty: "kumaPoint")
