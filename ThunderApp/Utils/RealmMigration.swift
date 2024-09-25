@@ -23,8 +23,8 @@ enum RealmMigration {
     )
     
 #if targetEnvironment(simulator)
-    static let realm: Realm = try! .init()
-//    static let realm: Realm = try! .init(configuration: configuration)
+//    static let realm: Realm = try! .init()
+    static let realm: Realm = try! .init(configuration: configuration)
 #else
     static let realm: Realm = try! .init(configuration: configuration)
 #endif
